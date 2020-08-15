@@ -4,7 +4,8 @@
 
 <br>
 <% if signed_in? %>
-<%= link_to "Sign out", signout_path%>
+<%= link_to "Sign out", signout_path%><br>
+<%= current_user.name %>
 <% else %>
 <%= link_to 'SIGN UP', '/signup' %><br>
 <%= link_to 'LOG IN', '/signin' %>

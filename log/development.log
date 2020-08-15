@@ -5639,3 +5639,1431 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 4182)
 
 
+Started GET "/users" for 127.0.0.1 at 2020-08-14 23:02:28 -0700
+  [1m[35m (14.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered users/index.html.erb within layouts/application (Duration: 88.8ms | Allocations: 73690)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.6ms | Allocations: 77392)
+
+
+  
+ActionView::Template::Error (undefined method `signed_in?' for #<#<Class:0x00007f680436aec0>:0x00007f6804369598>
+Did you mean?  signin_url):
+    3: <h1>Times</h1>
+    4: 
+    5: <br>
+    6: <% if signed_in? %>
+    7: <%= link_to "Sign out", signout_path%>
+    8: <% else %>
+    9: <%= link_to 'SIGN UP', '/signup' %><br>
+  
+app/views/users/index.html.erb:6
+Started GET "/users/new" for 127.0.0.1 at 2020-08-14 23:02:40 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 51.7ms | Allocations: 2681)
+  Rendered users/new.html.erb within layouts/application (Duration: 52.8ms | Allocations: 3016)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 180ms (Views: 178.7ms | ActiveRecord: 0.0ms | Allocations: 9918)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-08-14 23:02:46 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered users/index.html.erb within layouts/application (Duration: 93.3ms | Allocations: 71287)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.1ms | Allocations: 71758)
+
+
+  
+ActionView::Template::Error (undefined method `signed_in?' for #<#<Class:0x00007f680436aec0>:0x00007f68051bd888>
+Did you mean?  signin_url):
+    3: <h1>Times</h1>
+    4: 
+    5: <br>
+    6: <% if signed_in? %>
+    7: <%= link_to "Sign out", signout_path%>
+    8: <% else %>
+    9: <%= link_to 'SIGN UP', '/signup' %><br>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2020-08-14 23:02:58 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered users/index.html.erb within layouts/application (Duration: 80.4ms | Allocations: 71253)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.2ms | Allocations: 71698)
+
+
+  
+ActionView::Template::Error (undefined method `signed_in?' for #<#<Class:0x00007f680436aec0>:0x00007f68054a8908>
+Did you mean?  signin_url):
+    3: <h1>Times</h1>
+    4: 
+    5: <br>
+    6: <% if signed_in? %>
+    7: <%= link_to "Sign out", signout_path%>
+    8: <% else %>
+    9: <%= link_to 'SIGN UP', '/signup' %><br>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2020-08-14 23:03:02 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered users/index.html.erb within layouts/application (Duration: 2583.7ms | Allocations: 71269)
+Completed 500 Internal Server Error in 2585ms (ActiveRecord: 0.1ms | Allocations: 71715)
+
+
+  
+ActionView::Template::Error (undefined method `signed_in?' for #<#<Class:0x00007f680436aec0>:0x00007f6805815168>
+Did you mean?  signin_url):
+    3: <h1>Times</h1>
+    4: 
+    5: <br>
+    6: <% if signed_in? %>
+    7: <%= link_to "Sign out", signout_path%>
+    8: <% else %>
+    9: <%= link_to 'SIGN UP', '/signup' %><br>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for 127.0.0.1 at 2020-08-14 23:04:10 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/home/rvt/Documents/GitHub/RoR-capstone/app/helpers/sessions_helper.rb:31: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/helpers/sessions_helper.rb:31: syntax error, unexpected end-of-input, expecting `end'
+app/helpers/sessions_helper.rb:31: syntax error, unexpected end-of-input, expecting `end'
+app/helpers/sessions_helper.rb:31: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2020-08-14 23:04:33 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+NameError (uninitialized constant SessionsHelper):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2020-08-14 23:04:51 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "CnkbTOAgASPWH2ahK1YIsQ"], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:13:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 44.3ms | Allocations: 4185)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 46.6ms | ActiveRecord: 1.7ms | Allocations: 9293)
+
+
+Started GET "/hours" for 127.0.0.1 at 2020-08-14 23:05:10 -0700
+Processing by HoursController#index as HTML
+  Rendering hours/index.html.erb within layouts/application
+  [1m[36mHour Load (0.4ms)[0m  [1m[34mSELECT "hours".* FROM "hours"[0m
+  ↳ app/views/hours/index.html.erb:16
+  Rendered hours/index.html.erb within layouts/application (Duration: 81.4ms | Allocations: 4403)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 184ms (Views: 84.8ms | ActiveRecord: 0.9ms | Allocations: 9350)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-14 23:05:16 -0700
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 10.6ms | Allocations: 1210)
+  Rendered hours/new.html.erb within layouts/application (Duration: 106.8ms | Allocations: 1531)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 112ms (Views: 111.6ms | ActiveRecord: 0.0ms | Allocations: 5221)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:05:21 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"xHIxJ3q4UNdEICSNp7UjrhnB1qQ1Om9uM+u8ithOEnUiShhD3tpNALWOA4AntaGchaSJs5IOS3GZuHCjYvvy3A==", "hour"=>{"name"=>"pok", "amount"=>"2"}, "commit"=>"Create Hour"}
+Completed 500 Internal Server Error in 3703ms (ActiveRecord: 0.0ms | Allocations: 83600)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<HoursController:0x00007f680461f620>):
+  
+app/controllers/hours_controller.rb:27:in `create'
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-14 23:06:58 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.3ms | Allocations: 748)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 831)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 0.4ms | Allocations: 8643)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:07:02 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"z47RglkxPyavOWRr0QAzCgWQOP8vOg9a8hPxFbLNDFN4KGHEZiPgz7ymJYY4kaWCoMUKkYuxBYe5W45j06uhGw==", "hour"=>{"name"=>"gfghg", "amount"=>"4"}, "commit"=>"Create Hour"}
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.0ms | Allocations: 83609)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<HoursController:0x00007f6805038c38>):
+  
+app/controllers/hours_controller.rb:27:in `create'
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:07:26 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"z47RglkxPyavOWRr0QAzCgWQOP8vOg9a8hPxFbLNDFN4KGHEZiPgz7ymJYY4kaWCoMUKkYuxBYe5W45j06uhGw==", "hour"=>{"name"=>"gfghg", "amount"=>"4"}, "commit"=>"Create Hour"}
+Completed 500 Internal Server Error in 3026ms (ActiveRecord: 0.0ms | Allocations: 84484)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<HoursController:0x000055c902950490>):
+  
+app/controllers/hours_controller.rb:27:in `create'
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-14 23:07:56 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.4ms | Allocations: 748)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 831)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 7.3ms | ActiveRecord: 0.6ms | Allocations: 8642)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:07:58 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"6zXgdo2VAIY9O82Dfbeaw28wiF6g0/Wo3KwdRLJv4ndck1Awsoffby6kjG6UJgxLymW6MARY/3WX5GIy0wlPPw==", "hour"=>{"name"=>"gfghg", "amount"=>"4"}, "commit"=>"Create Hour"}
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 0.0ms | Allocations: 83618)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<HoursController:0x00007f680433ee88>):
+  
+app/controllers/hours_controller.rb:27:in `create'
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:09:16 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"6zXgdo2VAIY9O82Dfbeaw28wiF6g0/Wo3KwdRLJv4ndck1Awsoffby6kjG6UJgxLymW6MARY/3WX5GIy0wlPPw==", "hour"=>{"name"=>"gfghg", "amount"=>"4"}, "commit"=>"Create Hour"}
+Completed 500 Internal Server Error in 712ms (ActiveRecord: 0.0ms | Allocations: 84444)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<HoursController:0x00007f6804552558>):
+  
+app/controllers/hours_controller.rb:27:in `create'
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-14 23:18:37 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.6ms | Allocations: 748)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 831)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 9.0ms | ActiveRecord: 0.4ms | Allocations: 8656)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:18:39 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"kZLd8q2h3nZ6EuGqlyBMuPqJE6z34Qq7CF2yFCa2DW0mNG20krMBn2mNoEd+sdowX9whwlNqAGZDFc1iR9CgJQ==", "hour"=>{"name"=>"gfghg", "amount"=>"4"}, "commit"=>"Create Hour"}
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 0.0ms | Allocations: 83611)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<HoursController:0x00007f6805802540>):
+  
+app/controllers/hours_controller.rb:27:in `create'
+Started POST "/__web_console/repl_sessions/74707d7191b8516cd28d15d966ba267d/trace" for 127.0.0.1 at 2020-08-14 23:18:52 -0700
+Started POST "/__web_console/repl_sessions/74707d7191b8516cd28d15d966ba267d/trace" for 127.0.0.1 at 2020-08-14 23:18:55 -0700
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-14 23:20:35 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.2ms | Allocations: 748)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 831)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 112ms (Views: 105.0ms | ActiveRecord: 0.5ms | Allocations: 8790)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:20:36 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"TzWz/2mwZiBGInrXfwRDAc7G9r6Roi/NkYgD4fVmerj4kwO5VqK5yVW9OzqWldWJa5PE0DUpJRDawHyXlADX8A==", "hour"=>{"name"=>"gfghg", "amount"=>"4"}, "commit"=>"Create Hour"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1204)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/hours_controller.rb:27:in `create'
+Started GET "/users" for 127.0.0.1 at 2020-08-14 23:20:53 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "CnkbTOAgASPWH2ahK1YIsQ"], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:13:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3537)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.5ms | Allocations: 8511)
+
+
+Started GET "/signout" for 127.0.0.1 at 2020-08-14 23:20:55 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 362)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-14 23:20:55 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:13:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 784)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.1ms | Allocations: 4334)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-08-14 23:20:58 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.6ms | Allocations: 753)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 835)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 4372)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-14 23:21:06 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"KW2imreiIT4faqgzWNCu6D2orq2gVXIKWdic41QL7dHMC6e9j+Qvqe9GO26NadM91IQkju81oDmh3QGuHNlHug==", "user"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007f6805036de8 @tempfile=#<Tempfile:/tmp/RackMultipart20200814-34196-w0h9zg.png>, @original_filename="app-screenshot.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"app-screenshot.png\"\r\nContent-Type: image/png\r\n">, "name"=>"rvt"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `block in create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "remember_token") VALUES (?, ?, ?, ?)[0m  [["name", "rvt"], ["created_at", "2020-08-15 06:21:06.302126"], ["updated_at", "2020-08-15 06:21:06.302126"], ["remember_token", "EkppPcJ56vzNQyMKoK465w"]]
+  ↳ app/controllers/users_controller.rb:29:in `block in create'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 14], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `block in create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 14], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `block in create'
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "6hgz6crqlf3wel6bwww9h9rwxjqd"], ["filename", "app-screenshot.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 210495], ["checksum", "NyLzRlzmcJYjflDvsnZdfw=="], ["created_at", "2020-08-15 06:21:06.334576"]]
+  ↳ app/controllers/users_controller.rb:29:in `block in create'
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "avatar"], ["record_type", "User"], ["record_id", 14], ["blob_id", 10], ["created_at", "2020-08-15 06:21:06.336748"]]
+  ↳ app/controllers/users_controller.rb:29:in `block in create'
+  [1m[36mUser Update (0.1ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2020-08-15 06:21:06.338413"], ["id", 14]]
+  ↳ app/controllers/users_controller.rb:29:in `block in create'
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `block in create'
+[36m  Disk Storage (1.7ms) [0m[32mUploaded file to key: 6hgz6crqlf3wel6bwww9h9rwxjqd (checksum: NyLzRlzmcJYjflDvsnZdfw==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: c14c73ba-df5b-4b06-b110-97b5ac9bb47b) to Async(active_storage_analysis) with arguments: #<GlobalID:0x000055c9027741a8 @uri=#<URI::GID gid://times/ActiveStorage::Blob/10>>
+Redirected to http://0.0.0.0:3000/users/14
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Completed 302 Found in 142ms (ActiveRecord: 15.3ms | Allocations: 49798)
+
+
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c14c73ba-df5b-4b06-b110-97b5ac9bb47b] Performing ActiveStorage::AnalyzeJob (Job ID: c14c73ba-df5b-4b06-b110-97b5ac9bb47b) from Async(active_storage_analysis) enqueued at 2020-08-15T06:21:06Z with arguments: #<GlobalID:0x000055c901e4ae60 @uri=#<URI::GID gid://times/ActiveStorage::Blob/10>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c14c73ba-df5b-4b06-b110-97b5ac9bb47b] [36m  Disk Storage (0.9ms) [0m[34mDownloaded file from key: 6hgz6crqlf3wel6bwww9h9rwxjqd[0m
+Started GET "/users/14" for 127.0.0.1 at 2020-08-14 23:21:06 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:66:in `set_user'
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c14c73ba-df5b-4b06-b110-97b5ac9bb47b] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c14c73ba-df5b-4b06-b110-97b5ac9bb47b]   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 14], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c14c73ba-df5b-4b06-b110-97b5ac9bb47b]   [1m[36mActiveStorage::Blob Update (0.3ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 10]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c14c73ba-df5b-4b06-b110-97b5ac9bb47b]   [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c14c73ba-df5b-4b06-b110-97b5ac9bb47b] Performed ActiveStorage::AnalyzeJob (Job ID: c14c73ba-df5b-4b06-b110-97b5ac9bb47b) from Async(active_storage_analysis) in 28.11ms
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 19.5ms | Allocations: 5604)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 0.4ms | Allocations: 12026)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97494856e456dc4921a2352e1da46694b7e23b8e/app-screenshot.png" for 127.0.0.1 at 2020-08-14 23:21:06 -0700
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97494856e456dc4921a2352e1da46694b7e23b8e", "filename"=>"app-screenshot"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+[36m  Disk Storage (82.7ms) [0m[34mGenerated URL for file at key: 6hgz6crqlf3wel6bwww9h9rwxjqd (http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMTVUMDY6MjY6MDYuNjY3WiIsInB1ciI6ImJsb2Jfa2V5In19--fc81eee6c3408ce2986815dfea7819d15719119a/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png)[0m
+Redirected to http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMTVUMDY6MjY6MDYuNjY3WiIsInB1ciI6ImJsb2Jfa2V5In19--fc81eee6c3408ce2986815dfea7819d15719119a/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png
+Completed 302 Found in 86ms (ActiveRecord: 0.2ms | Allocations: 2102)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMTVUMDY6MjY6MDYuNjY3WiIsInB1ciI6ImJsb2Jfa2V5In19--fc81eee6c3408ce2986815dfea7819d15719119a/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png" for 127.0.0.1 at 2020-08-14 23:21:07 -0700
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"app-screenshot.png\"; filename*=UTF-8''app-screenshot.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMTVUMDY6MjY6MDYuNjY3WiIsInB1ciI6ImJsb2Jfa2V5In19--fc81eee6c3408ce2986815dfea7819d15719119a", "filename"=>"app-screenshot"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-08-14 23:21:12 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:13:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 767)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 4318)
+
+
+Started GET "/signin" for 127.0.0.1 at 2020-08-14 23:21:13 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 519)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 4593)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2020-08-14 23:21:15 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"EcmcrN8GAK0ECRbM7kpkQKJCOT2EXrfMmwZPLUti/87cS2J8CSNoSieciP3E66XSBQNTLFDQdjZNIgs9zZ+viQ==", "session"=>{"name"=>"rvt"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "rvt"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://0.0.0.0:3000/users/14
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1124)
+
+
+Started GET "/users/14" for 127.0.0.1 at 2020-08-14 23:21:15 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:66:in `set_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 14], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2083)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 6147)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMTVUMDY6MjY6MDYuNjY3WiIsInB1ciI6ImJsb2Jfa2V5In19--fc81eee6c3408ce2986815dfea7819d15719119a/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png" for 127.0.0.1 at 2020-08-14 23:21:16 -0700
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"app-screenshot.png\"; filename*=UTF-8''app-screenshot.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMTVUMDY6MjY6MDYuNjY3WiIsInB1ciI6ImJsb2Jfa2V5In19--fc81eee6c3408ce2986815dfea7819d15719119a", "filename"=>"app-screenshot"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-08-14 23:21:18 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:13:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 631)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 4169)
+
+
+Started GET "/hours" for 127.0.0.1 at 2020-08-14 23:22:26 -0700
+Processing by HoursController#index as HTML
+  Rendering hours/index.html.erb within layouts/application
+  [1m[36mHour Load (0.1ms)[0m  [1m[34mSELECT "hours".* FROM "hours"[0m
+  ↳ app/views/hours/index.html.erb:16
+  Rendered hours/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 801)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.1ms | Allocations: 4373)
+
+
+Started DELETE "/hours/1" for 127.0.0.1 at 2020-08-14 23:22:29 -0700
+Processing by HoursController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Rw66rsHkHGXnDRGUmGUs8oHC6gRDXKgCrj2b1kTTtFvwqAro/vbDjPSSUHlx9Lp6JJfYaufXot/ldeSgJbUZEw==", "id"=>"1"}
+  [1m[36mHour Load (0.2ms)[0m  [1m[34mSELECT "hours".* FROM "hours" WHERE "hours"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:67:in `set_hour'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:57:in `destroy'
+  [1m[36mHour Destroy (0.2ms)[0m  [1m[31mDELETE FROM "hours" WHERE "hours"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/hours_controller.rb:57:in `destroy'
+  [1m[35m (91.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hours_controller.rb:57:in `destroy'
+Redirected to http://0.0.0.0:3000/hours
+Completed 302 Found in 96ms (ActiveRecord: 91.4ms | Allocations: 3891)
+
+
+Started GET "/hours" for 127.0.0.1 at 2020-08-14 23:22:29 -0700
+Processing by HoursController#index as HTML
+  Rendering hours/index.html.erb within layouts/application
+  [1m[36mHour Load (0.1ms)[0m  [1m[34mSELECT "hours".* FROM "hours"[0m
+  ↳ app/views/hours/index.html.erb:16
+  Rendered hours/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms | Allocations: 4335)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-14 23:22:31 -0700
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 4.6ms | Allocations: 688)
+  Rendered hours/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 770)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4324)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:22:36 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"91V7E+J5IfBTlz+7B943RErGnMnvRws1K80tSAxlfvYRbVJ3Rhs8J6I5GLaH3rV21qPD3khzLyqBnuFhttCeXw==", "hour"=>{"name"=>"pko", "amount"=>"3"}, "commit"=>"Create Hour"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1236)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/hours_controller.rb:27:in `create'
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:22:49 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"91V7E+J5IfBTlz+7B943RErGnMnvRws1K80tSAxlfvYRbVJ3Rhs8J6I5GLaH3rV21qPD3khzLyqBnuFhttCeXw==", "hour"=>{"name"=>"pko", "amount"=>"3"}, "commit"=>"Create Hour"}
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.0ms | Allocations: 84484)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<HoursController:0x000055c902881870>):
+  
+app/controllers/hours_controller.rb:27:in `create'
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:26:17 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"91V7E+J5IfBTlz+7B943RErGnMnvRws1K80tSAxlfvYRbVJ3Rhs8J6I5GLaH3rV21qPD3khzLyqBnuFhttCeXw==", "hour"=>{"name"=>"pko", "amount"=>"3"}, "commit"=>"Create Hour"}
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.6ms | Allocations: 88105)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<HoursController:0x00007f68042d54b0>):
+  
+app/controllers/hours_controller.rb:28:in `create'
+Started GET "/users" for 127.0.0.1 at 2020-08-14 23:29:45 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:13:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3735)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.5ms | Allocations: 9416)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-08-14 23:30:03 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:13:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 823)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 5273)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-14 23:31:41 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:13:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 3865)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 0.6ms | Allocations: 9651)
+
+
+Started GET "/hours" for 127.0.0.1 at 2020-08-14 23:31:48 -0700
+Processing by HoursController#index as HTML
+  Rendering hours/index.html.erb within layouts/application
+  [1m[36mHour Load (0.2ms)[0m  [1m[34mSELECT "hours".* FROM "hours"[0m
+  ↳ app/views/hours/index.html.erb:16
+  Rendered hours/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1235)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.6ms | Allocations: 5959)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-14 23:31:50 -0700
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.7ms | Allocations: 1048)
+  Rendered hours/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1378)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 7967)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:31:54 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"fOWDNI6l0WNBiXW5EAf0KbJSo7gLb9WxfPvpATqaHmma3apQKsfMtLAnUrSQB3YbLjf8r6xb8a7WqCUogC/+wA==", "hour"=>{"name"=>"hhgnghnh", "amount"=>"3"}, "commit"=>"Create Hour"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.3ms | Allocations: 844)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 926)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 117ms (Views: 5.5ms | ActiveRecord: 0.4ms | Allocations: 10835)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:32:01 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"dnw+TWVxquQdiVIKYGHc/K7vYCpXHT54iFOn4dgypcTB2o4LWmN1DQ4WE+eJ8Ep0C7pSRPOWNKXDG9iXuVQIjA==", "hour"=>{"name"=>"hhgnghnh", "amount"=>"7"}, "commit"=>"Create Hour"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.2ms | Allocations: 830)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 912)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 8389)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:52:33 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"wWBjGfJWFImjogY0thJJSdlrlUbGHVVClPSs63JUtk92xtNfzUTLYLA9R9lfg9/BfD6nKGKWX5/fvNOdEzIbBw==", "hour"=>{"name"=>"hhgnghnh", "amount"=>"7"}, "commit"=>"Create Hour"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms | Allocations: 10716)
+
+
+  
+NoMethodError (undefined method `group_id=' for #<Hour:0x000055c90298c800>
+Did you mean?  group=):
+  
+app/controllers/hours_controller.rb:30:in `create'
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:52:53 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"wWBjGfJWFImjogY0thJJSdlrlUbGHVVClPSs63JUtk92xtNfzUTLYLA9R9lfg9/BfD6nKGKWX5/fvNOdEzIbBw==", "hour"=>{"name"=>"hhgnghnh", "amount"=>"7"}, "commit"=>"Create Hour"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.2ms | Allocations: 10955)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `group_id`):
+  
+app/controllers/hours_controller.rb:30:in `create'
+Started GET "/hours" for 127.0.0.1 at 2020-08-14 23:54:11 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HoursController#index as HTML
+  Rendering hours/index.html.erb within layouts/application
+  [1m[36mHour Load (0.1ms)[0m  [1m[34mSELECT "hours".* FROM "hours"[0m
+  ↳ app/views/hours/index.html.erb:16
+  Rendered hours/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1372)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.3ms | Allocations: 6532)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-14 23:54:13 -0700
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 4.0ms | Allocations: 3176)
+  Rendered hours/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3501)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.4ms | Allocations: 10043)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2020-08-14 23:54:30 -0700
+Processing by GroupsController#new as HTML
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 1.7ms | Allocations: 1125)
+  Rendered groups/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1447)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 0.5ms | Allocations: 7747)
+
+
+Started POST "/groups" for 127.0.0.1 at 2020-08-14 23:54:40 -0700
+Processing by GroupsController#create as HTML
+  Parameters: {"authenticity_token"=>"P/vEZ2YSY5lQnwWz7jELKfKOXZ2Jd2iNsj1BcjH7CrSIXXQhWQC8cEMARF4HoJ2hV9tv8y38YlD5dT4EUJ2n/A==", "group"=>{"icon"=>#<ActionDispatch::Http::UploadedFile:0x000055c901d25e90 @tempfile=#<Tempfile:/tmp/RackMultipart20200814-34196-1rhg8oy.png>, @original_filename="app-screenshot.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"group[icon]\"; filename=\"app-screenshot.png\"\r\nContent-Type: image/png\r\n">, "name"=>"nomo"}, "commit"=>"Create Group"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/groups_controller.rb:30:in `block in create'
+  [1m[36mGroup Create (0.3ms)[0m  [1m[32mINSERT INTO "groups" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "nomo"], ["created_at", "2020-08-15 06:54:40.410000"], ["updated_at", "2020-08-15 06:54:40.410000"]]
+  ↳ app/controllers/groups_controller.rb:30:in `block in create'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 15], ["record_type", "Group"], ["name", "icon"], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:30:in `block in create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 15], ["record_type", "Group"], ["name", "icon"], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:30:in `block in create'
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "gwupp3ueq46x99u6va6jve7x7svk"], ["filename", "app-screenshot.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 210495], ["checksum", "NyLzRlzmcJYjflDvsnZdfw=="], ["created_at", "2020-08-15 06:54:40.438826"]]
+  ↳ app/controllers/groups_controller.rb:30:in `block in create'
+  [1m[36mActiveStorage::Attachment Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "icon"], ["record_type", "Group"], ["record_id", 15], ["blob_id", 11], ["created_at", "2020-08-15 06:54:40.440597"]]
+  ↳ app/controllers/groups_controller.rb:30:in `block in create'
+  [1m[36mGroup Update (0.1ms)[0m  [1m[33mUPDATE "groups" SET "updated_at" = ? WHERE "groups"."id" = ?[0m  [["updated_at", "2020-08-15 06:54:40.442965"], ["id", 15]]
+  ↳ app/controllers/groups_controller.rb:30:in `block in create'
+  [1m[35m (64.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/groups_controller.rb:30:in `block in create'
+[36m  Disk Storage (1.5ms) [0m[32mUploaded file to key: gwupp3ueq46x99u6va6jve7x7svk (checksum: NyLzRlzmcJYjflDvsnZdfw==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 187930ec-4363-4852-9473-6be667a7ea2b) to Async(active_storage_analysis) with arguments: #<GlobalID:0x000055c902c428b0 @uri=#<URI::GID gid://times/ActiveStorage::Blob/11>>
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://0.0.0.0:3000/groups/15
+[ActiveJob] [ActiveStorage::AnalyzeJob] [187930ec-4363-4852-9473-6be667a7ea2b] Performing ActiveStorage::AnalyzeJob (Job ID: 187930ec-4363-4852-9473-6be667a7ea2b) from Async(active_storage_analysis) enqueued at 2020-08-15T06:54:40Z with arguments: #<GlobalID:0x000055c902111db0 @uri=#<URI::GID gid://times/ActiveStorage::Blob/11>>
+Completed 302 Found in 152ms (ActiveRecord: 65.9ms | Allocations: 29097)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [187930ec-4363-4852-9473-6be667a7ea2b] [36m  Disk Storage (1.5ms) [0m[34mDownloaded file from key: gwupp3ueq46x99u6va6jve7x7svk[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [187930ec-4363-4852-9473-6be667a7ea2b] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [187930ec-4363-4852-9473-6be667a7ea2b]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [187930ec-4363-4852-9473-6be667a7ea2b]   [1m[36mActiveStorage::Blob Update (0.3ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 11]]
+Started GET "/groups/15" for 127.0.0.1 at 2020-08-14 23:54:40 -0700
+[ActiveJob] [ActiveStorage::AnalyzeJob] [187930ec-4363-4852-9473-6be667a7ea2b]   [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [187930ec-4363-4852-9473-6be667a7ea2b] Performed ActiveStorage::AnalyzeJob (Job ID: 187930ec-4363-4852-9473-6be667a7ea2b) from Async(active_storage_analysis) in 32.5ms
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:67:in `set_group'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 15], ["record_type", "Group"], ["name", "icon"], ["LIMIT", 1]]
+  ↳ app/views/groups/show.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/groups/show.html.erb:2
+  Rendered groups/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2553)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 21.9ms | ActiveRecord: 0.5ms | Allocations: 6927)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0441f55da748a09b08a5207472748c58249420f1/app-screenshot.png" for 127.0.0.1 at 2020-08-14 23:54:40 -0700
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0441f55da748a09b08a5207472748c58249420f1", "filename"=>"app-screenshot"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[36m  Disk Storage (34.2ms) [0m[34mGenerated URL for file at key: gwupp3ueq46x99u6va6jve7x7svk (http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaM2QxY0hBemRXVnhORFo0T1RsMU5uWmhObXAyWlRkNE4zTjJhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMTVUMDY6NTk6NDEuMDEzWiIsInB1ciI6ImJsb2Jfa2V5In19--90a37e7a24df1d67b767904435bdb4011f14f15d/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png)[0m
+Redirected to http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaM2QxY0hBemRXVnhORFo0T1RsMU5uWmhObXAyWlRkNE4zTjJhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMTVUMDY6NTk6NDEuMDEzWiIsInB1ciI6ImJsb2Jfa2V5In19--90a37e7a24df1d67b767904435bdb4011f14f15d/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png
+Completed 302 Found in 92ms (ActiveRecord: 0.1ms | Allocations: 2082)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaM2QxY0hBemRXVnhORFo0T1RsMU5uWmhObXAyWlRkNE4zTjJhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMTVUMDY6NTk6NDEuMDEzWiIsInB1ciI6ImJsb2Jfa2V5In19--90a37e7a24df1d67b767904435bdb4011f14f15d/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png" for 127.0.0.1 at 2020-08-14 23:54:41 -0700
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"app-screenshot.png\"; filename*=UTF-8''app-screenshot.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaM2QxY0hBemRXVnhORFo0T1RsMU5uWmhObXAyWlRkNE4zTjJhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMTVUMDY6NTk6NDEuMDEzWiIsInB1ciI6ImJsb2Jfa2V5In19--90a37e7a24df1d67b767904435bdb4011f14f15d", "filename"=>"app-screenshot"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 391)
+
+
+Started GET "/groups" for 127.0.0.1 at 2020-08-14 23:54:44 -0700
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:14
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1007)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.2ms | Allocations: 4693)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-14 23:54:58 -0700
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.5ms | Allocations: 886)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 969)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4534)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:55:17 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"HB1qKhLalvQXgPiNyUYPBxodbAP5Ao7OjbzQEvoyZliru9psLchJHQQfuWAg15mPv0hebV2JhBPG9K9km1TLEA==", "hour"=>{"name"=>"fapping", "amount"=>"6", "group"=>"mono"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.3ms | Allocations: 1019)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 5.5ms | ActiveRecord: 1.0ms | Allocations: 15360)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:55:26 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"isB6a2jolPoijlErXUuJNDVDGDWsSCkkMWVrcF/B8Xk9ZsotV/pLEzEREMa02h+8kBYqWwjDI/l6LRQGPqdcMQ==", "hour"=>{"name"=>"fapping", "amount"=>"6", "group"=>"mono"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.2ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 8593)
+
+
+Started GET "/hours" for 127.0.0.1 at 2020-08-14 23:55:40 -0700
+Processing by HoursController#index as HTML
+  Rendering hours/index.html.erb within layouts/application
+  [1m[36mHour Load (0.1ms)[0m  [1m[34mSELECT "hours".* FROM "hours"[0m
+  ↳ app/views/hours/index.html.erb:16
+  Rendered hours/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms | Allocations: 4182)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-14 23:55:41 -0700
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.6ms | Allocations: 873)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 955)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 4488)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:55:44 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"Dnezccg5SUXbw3LnAs+YHCaurf0KuaA2Xn+rw1P4O0PoT5oVbFtUkiptVeqCzxouusvy6q2NhCn0LGfq6U3b6g==", "hour"=>{"name"=>"", "amount"=>"", "group"=>"mono"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.7ms | Allocations: 1015)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1097)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 8.9ms | ActiveRecord: 0.4ms | Allocations: 8635)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:55:56 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"lWRB4vv16CG8nC5b9X0xwSPT5AHQ72z0nh1McBjRr4IiwvGkxOc3yK8Db7Yc7KdJhobWb3RkZinVVTMGebcCyg==", "hour"=>{"name"=>"asd", "amount"=>"5", "group"=>"1"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 2.2ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 9.3ms | ActiveRecord: 0.7ms | Allocations: 8590)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:55:57 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"tMSBtFNZwoSEZit4iD/v6PwsBMa4y1O053tf/kbkBp0DYjHybEsdbZf5apVhrnlgWXk2qBxAWWmsMyCIJ4Kr1Q==", "hour"=>{"name"=>"asd", "amount"=>"5", "group"=>"2"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.3ms | Allocations: 1019)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 5.9ms | ActiveRecord: 0.3ms | Allocations: 8622)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:55:58 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"c22RFOhw9OAvAzolwkfWeMZsnp1yHbGwjyCV/ah225HEyyFS12IrCTyce8gr1kDwYzms89aWu23EaOqLyRB22Q==", "hour"=>{"name"=>"asd", "amount"=>"5", "group"=>"3"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.4ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 8598)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:55:59 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"q6cExKf/xbALNvNzkXDux4nr1zWjvGdiayFXoTmnw28cAbSCmO0aWRipsp544XhPLL7lWwc3bb8gaSjXWMFuJw==", "hour"=>{"name"=>"asd", "amount"=>"5", "group"=>"3"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.4ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 8603)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:56:01 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"QaaJ1lqIHJvRlVPrI1OnuWB7wpdZZQ/WOunTni5pUUn2ADmQZZrDcsIKEgbKwjExxS7w+f3uBQtxoazoTw/8AQ==", "hour"=>{"name"=>"asd", "amount"=>"5", "group"=>"4"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.5ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 8585)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:56:02 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"M+J8hm2xzcI/0LAJ287ahTY6kLOeaH4A+lyNAG6/kCyERMzAUqMSKyxP8eQyX0wNk2+i3TrjdN2xFPJ2D9k9ZA==", "hour"=>{"name"=>"asd", "amount"=>"5", "group"=>"5"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.8ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 6.3ms | ActiveRecord: 0.3ms | Allocations: 8598)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:56:03 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"wd3SFSS6R9y8dr+qEnLv+if9kK9TUh99lkrw895LWgJ2e2JTG6iYNa/p/kf743lygqiiwffZFaDdAo+Fvy33Sg==", "hour"=>{"name"=>"asd", "amount"=>"5", "group"=>"6"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 2.0ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 8607)
+
+
+Started GET "/hours" for 127.0.0.1 at 2020-08-14 23:56:27 -0700
+Processing by HoursController#index as HTML
+  Rendering hours/index.html.erb within layouts/application
+  [1m[36mHour Load (0.1ms)[0m  [1m[34mSELECT "hours".* FROM "hours"[0m
+  ↳ app/views/hours/index.html.erb:16
+  Rendered hours/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 897)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 5351)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-14 23:56:28 -0700
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 4.4ms | Allocations: 1216)
+  Rendered hours/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1541)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 5242)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:56:32 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"SmQDOHGydBCISsA/YjaPkbdXuEpVugduBOYvhuY98POsXCpc1dBpx3nk5zLiNg2jKzLnXfKOI3GuteOvXIgQWg==", "hour"=>{"name"=>"erter", "amount"=>"4", "group"=>"1"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 3.2ms | Allocations: 1022)
+  Rendered hours/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 9.4ms | ActiveRecord: 0.3ms | Allocations: 8637)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:56:33 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"2SPAseHls3uW9WjpRSOFXQntU/H6pEnfZhJlhJi+6U5uhXD33vdskoVqKQSsshPVrLhhn14vQwItWhry+dhEBg==", "hour"=>{"name"=>"erter", "amount"=>"4", "group"=>"2"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.5ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 8586)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:56:34 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"hQ8LBmNO0ZaDJT/pSmfaj1lg32/zLeq3EbDY+L1253kyqbtAXFwOf5C6fgSj9kwH/DXtAVem4Gpa+KeO3BBKMQ==", "hour"=>{"name"=>"erter", "amount"=>"4", "group"=>"3"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.3ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 8603)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:56:36 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"+bw77uJH2OGveNDzqhD0lRY93+pGZgIl3GPDYNearQROGouo3VUHCLznkR5DgWIds2jthOLtCPiXK7wWtvwATA==", "hour"=>{"name"=>"erter", "amount"=>"4", "group"=>"4"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.2ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 8581)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:56:37 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"+pVwPPsRaSvV9w3QdvSkyjvpzcurWWxuWC/weuXkuY5NM8B6xAO2wsZoTD2fZTJCnrz/pQ/SZrMTZ48MhIIUxg==", "hour"=>{"name"=>"erter", "amount"=>"4", "group"=>"5"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.9ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 8588)
+
+
+Started GET "/hours" for 127.0.0.1 at 2020-08-14 23:56:39 -0700
+Processing by HoursController#index as HTML
+  Rendering hours/index.html.erb within layouts/application
+  [1m[36mHour Load (0.1ms)[0m  [1m[34mSELECT "hours".* FROM "hours"[0m
+  ↳ app/views/hours/index.html.erb:16
+  Rendered hours/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 4201)
+
+
+Started GET "/groups/" for 127.0.0.1 at 2020-08-14 23:56:47 -0700
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:14
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 994)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.1ms | Allocations: 5094)
+
+
+Started GET "/groups/15" for 127.0.0.1 at 2020-08-14 23:56:48 -0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:67:in `set_group'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 15], ["record_type", "Group"], ["name", "icon"], ["LIMIT", 1]]
+  ↳ app/views/groups/show.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/groups/show.html.erb:2
+  Rendered groups/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2235)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 6466)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaM2QxY0hBemRXVnhORFo0T1RsMU5uWmhObXAyWlRkNE4zTjJhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMTVUMDY6NTk6NDEuMDEzWiIsInB1ciI6ImJsb2Jfa2V5In19--90a37e7a24df1d67b767904435bdb4011f14f15d/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png" for 127.0.0.1 at 2020-08-14 23:56:48 -0700
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"app-screenshot.png\"; filename*=UTF-8''app-screenshot.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaM2QxY0hBemRXVnhORFo0T1RsMU5uWmhObXAyWlRkNE4zTjJhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMTVUMDY6NTk6NDEuMDEzWiIsInB1ciI6ImJsb2Jfa2V5In19--90a37e7a24df1d67b767904435bdb4011f14f15d", "filename"=>"app-screenshot"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 342)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:57:08 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"2SPAseHls3uW9WjpRSOFXQntU/H6pEnfZhJlhJi+6U5uhXD33vdskoVqKQSsshPVrLhhn14vQwItWhry+dhEBg==", "hour"=>{"name"=>"erter", "amount"=>"4", "group"=>"15"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.3ms | Allocations: 1029)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1112)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 5.3ms | ActiveRecord: 0.4ms | Allocations: 8618)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:57:13 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"IDlo/oFJUc7RigsBXdJ5OD+bxr+naiJ7QNLSwfK84WuXn9i4vluOJ8IVSuy0Q++wms700QPhKKYLmq23k9pMIw==", "hour"=>{"name"=>"erter", "amount"=>"4", "group"=>"14"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.6ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 8592)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:57:15 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"NDC/+J8GBvHxgS9NJk3S/kuNPgBci+emqOiJGmQuGleDlg++oBTZGOIebqDP3ER27tgMbvgA7XvjoPZsBUi3Hw==", "hour"=>{"name"=>"erter", "amount"=>"4", "group"=>"15"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.4ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 8595)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:57:17 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"Yw1MUIHptQIdjHyaSQ1xE41lIfVgSlbAaZZgySruEWnUq/wWvvtq6w4TPXegnOebKDATm8TBXB0i3h+/S4i8IQ==", "hour"=>{"name"=>"erter", "amount"=>"4", "group"=>"16"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.4ms | Allocations: 1017)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 8603)
+
+
+Started GET "/hours" for 127.0.0.1 at 2020-08-14 23:57:34 -0700
+Processing by HoursController#index as HTML
+  Rendering hours/index.html.erb within layouts/application
+  [1m[36mHour Load (0.2ms)[0m  [1m[34mSELECT "hours".* FROM "hours"[0m
+  ↳ app/views/hours/index.html.erb:16
+  Rendered hours/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 894)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 5346)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-14 23:57:35 -0700
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.8ms | Allocations: 1220)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1545)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5253)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:57:42 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"UqnOXq2/412vcRt6A1w4vwZapQsnbAVrV4446n0r5QG0kec6Cd3+il7fPHeDXLqNmj/6HIBYIXT93fTDx54FqA==", "hour"=>{"name"=>"srer", "amount"=>"3", "group"=>"15"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.7ms | Allocations: 1023)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1105)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 5.2ms | ActiveRecord: 0.4ms | Allocations: 8639)
+
+
+Started GET "/hours" for 127.0.0.1 at 2020-08-14 23:58:01 -0700
+Processing by HoursController#index as HTML
+  Rendering hours/index.html.erb within layouts/application
+  [1m[36mHour Load (0.1ms)[0m  [1m[34mSELECT "hours".* FROM "hours"[0m
+  ↳ app/views/hours/index.html.erb:16
+  Rendered hours/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 897)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 5345)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-14 23:58:02 -0700
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 3.2ms | Allocations: 1329)
+  Rendered hours/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1654)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 5348)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:58:07 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"9oeb1udsPkgc2Nuh2KJPQUt6fOmaozP6Qd8qKWPfIyYQv7KyQw4jn+12/KxYos1z1x8j/j2XF+XrjOYA2WrDjw==", "hour"=>{"name"=>"dsf", "amount"=>"34", "group_id"=>"15"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group_id[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.6ms | Allocations: 1020)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 8622)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:58:11 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"km0vv2fHdK0Ufo3quMuS0H+WNSxGNk9REeKlFXeljtEly5/5WNWrRAfhzAdRWgRY2sMHQuK9RYxaqtpjFsMjmQ==", "hour"=>{"name"=>"dsf", "amount"=>"34", "group_id"=>"14"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group_id[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 2.2ms | Allocations: 1020)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 8596)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:58:13 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"1NTugaQ8swpZ3EY797pV6EqUWOQsj4ZKEB0iPNxJSYZjcl7Hmy5s40pDB9YeK8Ng78FqiogEjJdbVV1KvS/kzg==", "hour"=>{"name"=>"dsf", "amount"=>"34", "group_id"=>"13"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group_id[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 2.2ms | Allocations: 1020)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 8594)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:58:14 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"Vdei/IIReoPnADQxPULhh6FMLnmBhFlEH2gsU9kTrWficRK6vQOlavSfddzU03cPBBkcFyUPU5lUIFMluHUALw==", "hour"=>{"name"=>"dsf", "amount"=>"34", "group_id"=>"16"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group_id[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.2ms | Allocations: 1020)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 5.3ms | ActiveRecord: 0.3ms | Allocations: 8596)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-14 23:58:16 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"j12lkJfjwJaZXLnLMWj2sD+oRVm5wT9TN3pA/PC/dKo4+xXWqPEff4rD+CbY+WA4mv13Nx1KNY58Mj+KkdnZ4g==", "hour"=>{"name"=>"dsf", "amount"=>"34", "group_id"=>"15"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group_id[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.8ms | Allocations: 1022)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 6.1ms | ActiveRecord: 0.5ms | Allocations: 8605)
+
+
+Started GET "/hours" for 127.0.0.1 at 2020-08-15 00:01:50 -0700
+Processing by HoursController#index as HTML
+  Rendering hours/index.html.erb within layouts/application
+  [1m[36mHour Load (0.1ms)[0m  [1m[34mSELECT "hours".* FROM "hours"[0m
+  ↳ app/views/hours/index.html.erb:16
+  Rendered hours/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 897)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 5341)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-15 00:01:52 -0700
+Processing by HoursController#new as HTML
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.8ms | Allocations: 1248)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1573)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 5255)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-15 00:01:57 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"uuA9dDIdR7n5w9Q6AveUzV0vOvVvfXXNRqPnEudvQv1c2BQQln9abght8zeC9xb/wUpl4shJUdLs8Cs7XdqiVA==", "hour"=>{"name"=>"efd", "amount"=>"1", "group_id"=>"15"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group_id[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.3ms | Allocations: 1019)
+  Rendered hours/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 8627)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-15 00:01:59 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"3VdAHT8Khv5Jl7rnF7IzK96EFFEWu/R7kyU8y76w6qZq8fBbABhZF1oI+wr+I6Wje9EmP7Iw/qbYbUO939ZH7g==", "hour"=>{"name"=>"efd", "amount"=>"1", "group_id"=>"14"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group_id[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 2.1ms | Allocations: 1019)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 0.3ms | Allocations: 8595)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-15 00:02:01 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"Ptupdmst0RJIE4svns4uOG+P5jXPHVCuwQ397aHPsQeJfRkwVD8O+1uMysJ3X7iwytrUW2uWWnOKRYKbwKkcTw==", "hour"=>{"name"=>"efd", "amount"=>"1", "group_id"=>"13"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group_id[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 2.5ms | Allocations: 1019)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 0.3ms | Allocations: 8597)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-15 00:02:02 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"V2twuS/X3DW7TYjPVEqaAofmyT/xsTuvTibmVO+i1kPgzcD/EMUD3KjSySK92wyKIrP7UVU6MXIFbpkijsR7Cw==", "hour"=>{"name"=>"efd", "amount"=>"1", "group_id"=>"12"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group_id[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 2.0ms | Allocations: 1019)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 10.7ms | ActiveRecord: 0.4ms | Allocations: 8599)
+
+
+Started POST "/hours" for 127.0.0.1 at 2020-08-15 00:02:03 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"authenticity_token"=>"oq9xn2BohzTh4PTyrsQdxTAKVv6ra5Zw9bm56XqS64QVCcHZX3pY3fJ/tR9HVYtNlV9kkA/gnK2+8cafG/RGzA==", "hour"=>{"name"=>"efd", "amount"=>"1", "group_id"=>"11"}, "commit"=>"Create Hour"}
+[31mUnpermitted parameter: :group_id[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "EkppPcJ56vzNQyMKoK465w"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:28:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hours_controller.rb:32:in `block in create'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 1.9ms | Allocations: 1024)
+  Rendered hours/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1106)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 8619)
+
+

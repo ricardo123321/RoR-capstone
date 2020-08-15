@@ -25,6 +25,8 @@ class HoursController < ApplicationController
   # POST /hours.json
   def create
     @hour = Hour.new(hour_params)
+    @current_user ||= User.find_by_remember_token(cookies[:remember_token])
+    @hour.user_id = @current_user.id
 
     respond_to do |format|
       if @hour.save
