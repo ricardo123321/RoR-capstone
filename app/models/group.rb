@@ -1,3 +1,4 @@
 class Group < ApplicationRecord
-  validates :content, :length => { :maximum => 30 }
+  has_one_attached :icon
+  has_many :hours
 end

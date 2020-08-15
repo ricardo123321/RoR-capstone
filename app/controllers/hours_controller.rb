@@ -69,6 +69,6 @@ class HoursController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def hour_params
-      params.require(:hour).permit(:name, :user_id, :amount)
+      params.require(:hour).permit(:name, :user_id, :amount,)
     end
 end
