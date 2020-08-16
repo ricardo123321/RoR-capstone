@@ -14,6 +14,7 @@ class HoursController < ApplicationController
 
   # GET /hours/new
   def new
+    @group_options = Group.all.map{ |u| [ u.name, u.id ] }
     @hour = Hour.new
   end
 
@@ -71,6 +72,6 @@ class HoursController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def hour_params
-      params.require(:hour).permit(:name, :user_id, :amount,)
+      params.require(:hour).permit(:name, :user_id, :amount, :group_id)
     end
 end

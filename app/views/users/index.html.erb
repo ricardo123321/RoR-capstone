@@ -5,9 +5,9 @@
 <br>
 <% if signed_in? %>
 <%= link_to "Sign out", signout_path%><br>
-<%= current_user.name %>
+<%= link_to 'My Profile', current_user%>
 <% else %>
-<%= link_to 'SIGN UP', '/signup' %><br>
-<%= link_to 'LOG IN', '/signin' %>
+<%= link_to 'LOG IN', '/signin', class: "btn btn-lg btn-primary btn-block" %>
+<%= link_to 'SIGN UP', '/signup', class: "btn btn-lg btn-block" %>
 <% end %>
 

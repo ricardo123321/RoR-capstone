@@ -16,7 +16,7 @@
     <% @hours.each do |hour| %>
       <tr>
         <td><%= hour.name %></td>
-        <td><%= hour.user_id %></td>
+        <td><%= hour.user.name %></td>
         <td><%= hour.amount %></td>
         <td><%= link_to 'Show', hour %></td>
         <td><%= link_to 'Edit', edit_hour_path(hour) %></td>

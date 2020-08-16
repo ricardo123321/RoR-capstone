@@ -22,9 +22,10 @@
   </div>
 
     <div class="field">
-    <%= form.label :group_id %>
-    <%= form.number_field :group_id %>
+    <%= form.label :group %>
+    <%= form.select(:group_id, @group_options, { include_blank: true }) %>
   </div>
+  
 
   <div class="actions">
     <%= form.submit %>

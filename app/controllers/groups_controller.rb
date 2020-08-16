@@ -5,6 +5,7 @@ class GroupsController < ApplicationController
   # GET /groups.json
   def index
     @groups = Group.all
+    @current_user ||= User.find_by_remember_token(cookies[:remember_token])
   end
 
   # GET /groups/1

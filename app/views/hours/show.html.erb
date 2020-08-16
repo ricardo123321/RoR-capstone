@@ -7,12 +7,21 @@
 
 <p>
   <strong>User:</strong>
-  <%= @hour.user_id %>
+  <%= @hour.user.name %>
 </p>
 
 <p>
   <strong>Amount:</strong>
   <%= @hour.amount %>
+</p>
+
+<p>
+  <strong>group:</strong>
+  <% if @hour.group.nil? %>
+   none
+  <% else %>
+  <%= @hour.group.name %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_hour_path(@hour) %> |
