@@ -37,7 +37,6 @@ ActiveRecord::Schema.define(version: 2020_08_16_001243) do
     t.text "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "hour_id"
   end
 
   create_table "hours", force: :cascade do |t|
