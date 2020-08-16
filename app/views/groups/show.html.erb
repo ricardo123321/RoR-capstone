@@ -5,5 +5,25 @@
   <%= @group.name %>
 </p>
 
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>User</th>
+      <th>Amount</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hours.each do |hour| %>
+      <tr>
+        <td><%= hour.name %></td>
+        <td><%= hour.amount %></td> 
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
 <%= link_to 'Edit', edit_group_path(@group) %> |
 <%= link_to 'Back', groups_path %>

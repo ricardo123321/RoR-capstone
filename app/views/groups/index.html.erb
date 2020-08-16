@@ -11,8 +11,7 @@
   </thead>
 
   <tbody>
-    <% @current_user.group.each do |group| %>
-    <% Group.where(id: ) do |group| %>
+    <% @groups.each do |group| %>
       <tr>
         <td><%= group.name %></td>
         <td><%= link_to 'Show', group %></td>

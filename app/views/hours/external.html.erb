@@ -15,10 +15,8 @@
   <tbody>
     <% @hours.each do |hour| %>
       <tr>
-        <td><img src="<%=(url_for(hour.group.icon))%>"></td>
         <td><%= hour.name %></td>
         <td><%= hour.amount %></td> 
-        <td><%= hour.created_at %></td>
       </tr>
     <% end %>
   </tbody>

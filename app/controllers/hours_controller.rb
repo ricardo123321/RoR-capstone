@@ -4,12 +4,18 @@ class HoursController < ApplicationController
   # GET /hours
   # GET /hours.json
   def index
-    @hours = Hour.all
+    @current_user ||= User.find_by_remember_token(cookies[:remember_token])
+    @hours = Hour.where(:user_id => @current_user.id).where.not(:group_id => nil).order("created_at DESC")   
   end
 
   # GET /hours/1
   # GET /hours/1.json
   def show
+  end
+
+  def external
+    @current_user ||= User.find_by_remember_token(cookies[:remember_token])
+    @hours = Hour.where(:user_id => @current_user.id, :group_id => nil).order("created_at DESC")
   end
 
   # GET /hours/new

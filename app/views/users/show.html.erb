@@ -3,8 +3,9 @@
 <p>
   <strong>Name:</strong>
   <%= @user.name %>
-  <%= @user.hour_id %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'All my transactions', hours_path %> <br>
+<%= link_to 'All my  external transactions', '/external' %> <br>
+<%= link_to 'All groups', groups_path %> <br>
 <%= link_to 'Back', users_path %>
