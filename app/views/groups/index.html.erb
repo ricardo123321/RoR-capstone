@@ -1,27 +1,26 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Groups</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @groups.each do |group| %>
-      <tr>
-        <td><%= group.name %></td>
-        <td><%= link_to 'Show', group %></td>
-        <td><%= link_to 'Edit', edit_group_path(group) %></td>
-        <td><%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<body class="bg-light">
+<header class="blog-header py-3 bg-primary">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+            <%= link_to 'My Profile', current_user, class:"text-white ml-2"%>
+        </div>
+        <div class="col-4 text-center">
+            <h1 class="blog-header-logo text-white" href="#">All Groups</h1>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+            <%= link_to "Sign out", signout_path, class: "btn btn-sm btn-outline-secondary text-white mr-2"%><br>
+        </div>
+    </div>
+</header>
 <br>
-
+<% @groups.each do |group| %>
+<a href=<%=(url_for(group))%>>
+<div class="media pt-2 pb-2 text-muted bg-white">
+  <img src="<%=(url_for(group.icon))%>" alt="" class="ml-2 mr-2 rounded" width="50" height="50"/>
+  <p class="lh-125 mb-0 media-body small ml-2"> <strong class="d-block text-gray-dark"><%= group.name %></strong><br><%= group.created_at %></p>
+</div>
+<br>
+<% end %>
+</a>
 <%= link_to 'New Group', new_group_path %>
+</body>

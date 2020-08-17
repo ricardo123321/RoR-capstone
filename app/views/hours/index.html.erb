@@ -1,9 +1,22 @@
 <body class="bg-light">
-<h1>Hours</h1>
+<header class="blog-header py-3 bg-primary">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+            <%= link_to 'My Profile', current_user, class:"text-white ml-2"%>
+        </div>
+        <div class="col-4 text-center">
+            <h1 class="blog-header-logo text-white" href="#">Hours</h1>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+            <%= link_to "Sign out", signout_path, class: "btn btn-sm btn-outline-secondary text-white mr-2"%><br>
+        </div>
+    </div>
+</header>
+<br>
 <% @hours.each do |hour| %>
 <div class="media pt-2 pb-2 text-muted bg-white">
     <img src="<%=(url_for(hour.group.icon))%>" alt="" class="ml-2 mr-2 rounded" width="50" height="50"/>
-    <p class="lh-125 mb-0 media-body pb-3 small"> <strong class="d-block text-gray-dark"><%= hour.name %> <strong class="float-right mr-2"><%= hour.amount %>hrs</strong></strong> <%= hour.created_at %></p>
+    <p class="lh-125 mb-0 media-body small"> <strong class="d-block text-gray-dark"><%= hour.name %> <strong class="float-right mr-2"><%= hour.amount %>hrs</strong></strong><br><%= hour.created_at %></p>
 </div>
 <br>
 <% end %>
