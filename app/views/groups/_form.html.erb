@@ -13,15 +13,12 @@
 
     <div class="field">
     <%= form.label 'Profile Photo' %>
-    <%= form.file_field :icon %>
+    <%= form.file_field :icon, class:"border-bottom pt-2 pb-2" %><br>
+    <%= form.text_field :name, placeholder:"name", class: "border-0 pt-2 pb-2" %>
   </div>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_area :name %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions text-center">
+    <%= form.submit%><br><br>
+    <%= link_to 'Back', groups_path%>
   </div>
 <% end %>

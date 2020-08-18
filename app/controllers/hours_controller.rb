@@ -5,7 +5,8 @@ class HoursController < ApplicationController
   # GET /hours.json
   def index
     @current_user ||= User.find_by_remember_token(cookies[:remember_token])
-    @hours = Hour.where(:user_id => @current_user.id).where.not(:group_id => nil).order("created_at DESC")   
+    @hours = Hour.where(:user_id => @current_user.id).where.not(:group_id => nil).order("created_at DESC").includes(:group) 
+    @time = @hours.to_a.map{|x| x[:amount]}.sum
   end
 
   # GET /hours/1
@@ -16,6 +17,7 @@ class HoursController < ApplicationController
   def external
     @current_user ||= User.find_by_remember_token(cookies[:remember_token])
     @hours = Hour.where(:user_id => @current_user.id, :group_id => nil).order("created_at DESC")
+    @time = @hours.to_a.map{|x| x[:amount]}.sum
   end
 
   # GET /hours/new
@@ -34,7 +36,8 @@ class HoursController < ApplicationController
     @hour = Hour.new(hour_params)
     @current_user ||= User.find_by_remember_token(cookies[:remember_token])
     @hour.user_id = @current_user.id
-
+    @group_options = Group.all.map{ |u| [ u.name, u.id ] }
+    
     respond_to do |format|
       if @hour.save
         format.html { redirect_to @hour, notice: 'Hour was successfully created.' }
