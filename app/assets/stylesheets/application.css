@@ -19,12 +19,10 @@
 
 h1,
 h4 {
-
-  font-family: 'FacileSans, Arial, Verdana, Tahoma, sans-serif;';
+  font-family: 'FacileSans', Arial, Verdana, Tahoma, sans-serif;
 }
 
-
 body {
-  font-family: 'News-Cycle-Regular, Arial, Verdana, Tahoma, sans-serif;';
+  font-family: 'News-Cycle-Regular', Arial, Verdana, Tahoma, sans-serif;
   color: #434b54;
 }
