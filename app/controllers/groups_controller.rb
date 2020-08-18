@@ -4,7 +4,7 @@ class GroupsController < ApplicationController
   # GET /groups
   # GET /groups.json
   def index
-    @groups = Group.all
+    @groups = Group.all.order('name ASC')
     @index ||= User.find_by_remember_token(cookies[:remember_token])
   end
 
