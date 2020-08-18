@@ -38056,3 +38056,140 @@ Processing by ActiveStorage::DiskController#show as PNG
 Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 362)
 
 
+Started GET "/groups" for 127.0.0.1 at 2020-08-18 06:17:40 -0700
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fc24cbb1c86df4539be0c81dc6203150572e82b8/_Blank%20ERD%20&%20data%20flow%20(1).png" for 127.0.0.1 at 2020-08-18 06:17:40 -0700
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7c3478405fa3d96957ad3e17ac0b9950880d4bec/_Blank%20ERD%20&%20data%20flow%20(1).png" for 127.0.0.1 at 2020-08-18 06:17:40 -0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "Y0P-Z4qZzzYOyDwlqUPwLg"], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:8:in `index'
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "Y0P-Z4qZzzYOyDwlqUPwLg"], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:12:in `current_user'
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name ASC[0m
+  ↳ app/views/groups/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Group"], ["name", "icon"], ["LIMIT", 1]]
+  ↳ app/views/groups/index.html.erb:19
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/groups/index.html.erb:19
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Group"], ["name", "icon"], ["LIMIT", 1]]
+  ↳ app/views/groups/index.html.erb:19
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/groups/index.html.erb:19
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Group"], ["name", "icon"], ["LIMIT", 1]]
+  ↳ app/views/groups/index.html.erb:19
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/groups/index.html.erb:19
+  Rendered groups/index.html.erb within layouts/application (Duration: 32.8ms | Allocations: 21171)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 34.0ms | ActiveRecord: 4.0ms | Allocations: 31241)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d4d714fd462a672be6ed0535ad59d61bddb6941/_Blank%20ERD%20&%20data%20flow%20(1).png" for 127.0.0.1 at 2020-08-18 06:17:40 -0700
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7c3478405fa3d96957ad3e17ac0b9950880d4bec", "filename"=>"_Blank ERD & data flow (1)"}
+Processing by ActiveStorage::BlobsController#show as PNG
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d4d714fd462a672be6ed0535ad59d61bddb6941", "filename"=>"_Blank ERD & data flow (1)"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fc24cbb1c86df4539be0c81dc6203150572e82b8", "filename"=>"_Blank ERD & data flow (1)"}
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[36m  Disk Storage (1.2ms) [0m[34mGenerated URL for file at key: hnzbu6ocm7s7nmdmmgdgw55we4tk (http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRzU2WW5VMmIyTnROM00zYm0xa2JXMW5aR2QzTlRWM1pUUjBhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWw5Q2JHRnVheUJGVWtRZ0pUSTJJR1JoZEdFZ1pteHZkeUFsTWpneEpUSTVMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblgwSnNZVzVySlRJd1JWSkVKVEl3SlRJMkpUSXdaR0YwWVNVeU1HWnNiM2NsTWpBbE1qZ3hKVEk1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMThUMTM6MjI6NDAuOTA5WiIsInB1ciI6ImJsb2Jfa2V5In19--7edb98fb8c80b16e791c30910db0c1893eda93c8/_Blank%20ERD%20&%20data%20flow%20(1).png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22_Blank+ERD+%2526+data+flow+%25281%2529.png%22%3B+filename%2A%3DUTF-8%27%27_Blank%2520ERD%2520%2526%2520data%2520flow%2520%25281%2529.png)[0m
+Redirected to http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRzU2WW5VMmIyTnROM00zYm0xa2JXMW5aR2QzTlRWM1pUUjBhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWw5Q2JHRnVheUJGVWtRZ0pUSTJJR1JoZEdFZ1pteHZkeUFsTWpneEpUSTVMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblgwSnNZVzVySlRJd1JWSkVKVEl3SlRJMkpUSXdaR0YwWVNVeU1HWnNiM2NsTWpBbE1qZ3hKVEk1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMThUMTM6MjI6NDAuOTA5WiIsInB1ciI6ImJsb2Jfa2V5In19--7edb98fb8c80b16e791c30910db0c1893eda93c8/_Blank%20ERD%20&%20data%20flow%20(1).png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22_Blank+ERD+%2526+data+flow+%25281%2529.png%22%3B+filename%2A%3DUTF-8%27%27_Blank%2520ERD%2520%2526%2520data%2520flow%2520%25281%2529.png
+Completed 302 Found in 23ms (ActiveRecord: 8.9ms | Allocations: 14081)
+
+
+  [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[36m  Disk Storage (0.9ms) [0m[34mGenerated URL for file at key: 18xantz7d8bc1dl0m5wn1te2gatn (http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNVGg0WVc1MGVqZGtPR0pqTVdSc01HMDFkMjR4ZEdVeVoyRjBiZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWw5Q2JHRnVheUJGVWtRZ0pUSTJJR1JoZEdFZ1pteHZkeUFsTWpneEpUSTVMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblgwSnNZVzVySlRJd1JWSkVKVEl3SlRJMkpUSXdaR0YwWVNVeU1HWnNiM2NsTWpBbE1qZ3hKVEk1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMThUMTM6MjI6NDAuOTE0WiIsInB1ciI6ImJsb2Jfa2V5In19--8a49cd6e95d8eddb4586fe05a479fc3e6ff7cf27/_Blank%20ERD%20&%20data%20flow%20(1).png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22_Blank+ERD+%2526+data+flow+%25281%2529.png%22%3B+filename%2A%3DUTF-8%27%27_Blank%2520ERD%2520%2526%2520data%2520flow%2520%25281%2529.png)[0m
+Redirected to http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNVGg0WVc1MGVqZGtPR0pqTVdSc01HMDFkMjR4ZEdVeVoyRjBiZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWw5Q2JHRnVheUJGVWtRZ0pUSTJJR1JoZEdFZ1pteHZkeUFsTWpneEpUSTVMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblgwSnNZVzVySlRJd1JWSkVKVEl3SlRJMkpUSXdaR0YwWVNVeU1HWnNiM2NsTWpBbE1qZ3hKVEk1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMThUMTM6MjI6NDAuOTE0WiIsInB1ciI6ImJsb2Jfa2V5In19--8a49cd6e95d8eddb4586fe05a479fc3e6ff7cf27/_Blank%20ERD%20&%20data%20flow%20(1).png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22_Blank+ERD+%2526+data+flow+%25281%2529.png%22%3B+filename%2A%3DUTF-8%27%27_Blank%2520ERD%2520%2526%2520data%2520flow%2520%25281%2529.png
+  [1m[36mActiveStorage::Blob Load (1.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 302 Found in 15ms (ActiveRecord: 2.1ms | Allocations: 8806)
+
+
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: hsgod7zowaawcoxdrdwvqq5k7vco (http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhSE5uYjJRM2VtOTNZV0YzWTI5NFpISmtkM1p4Y1RWck4zWmpid1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWw5Q2JHRnVheUJGVWtRZ0pUSTJJR1JoZEdFZ1pteHZkeUFsTWpneEpUSTVMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblgwSnNZVzVySlRJd1JWSkVKVEl3SlRJMkpUSXdaR0YwWVNVeU1HWnNiM2NsTWpBbE1qZ3hKVEk1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMThUMTM6MjI6NDAuOTE3WiIsInB1ciI6ImJsb2Jfa2V5In19--34502bbc98321a5dd7272cf3523888fb11e4785d/_Blank%20ERD%20&%20data%20flow%20(1).png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22_Blank+ERD+%2526+data+flow+%25281%2529.png%22%3B+filename%2A%3DUTF-8%27%27_Blank%2520ERD%2520%2526%2520data%2520flow%2520%25281%2529.png)[0m
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRzU2WW5VMmIyTnROM00zYm0xa2JXMW5aR2QzTlRWM1pUUjBhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWw5Q2JHRnVheUJGVWtRZ0pUSTJJR1JoZEdFZ1pteHZkeUFsTWpneEpUSTVMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblgwSnNZVzVySlRJd1JWSkVKVEl3SlRJMkpUSXdaR0YwWVNVeU1HWnNiM2NsTWpBbE1qZ3hKVEk1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMThUMTM6MjI6NDAuOTA5WiIsInB1ciI6ImJsb2Jfa2V5In19--7edb98fb8c80b16e791c30910db0c1893eda93c8/_Blank%20ERD%20&%20data%20flow%20(1).png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22_Blank+ERD+%2526+data+flow+%25281%2529.png%22%3B+filename%2A%3DUTF-8%27%27_Blank%2520ERD%2520%2526%2520data%2520flow%2520%25281%2529.png" for 127.0.0.1 at 2020-08-18 06:17:40 -0700
+Redirected to http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhSE5uYjJRM2VtOTNZV0YzWTI5NFpISmtkM1p4Y1RWck4zWmpid1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWw5Q2JHRnVheUJGVWtRZ0pUSTJJR1JoZEdFZ1pteHZkeUFsTWpneEpUSTVMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblgwSnNZVzVySlRJd1JWSkVKVEl3SlRJMkpUSXdaR0YwWVNVeU1HWnNiM2NsTWpBbE1qZ3hKVEk1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMThUMTM6MjI6NDAuOTE3WiIsInB1ciI6ImJsb2Jfa2V5In19--34502bbc98321a5dd7272cf3523888fb11e4785d/_Blank%20ERD%20&%20data%20flow%20(1).png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22_Blank+ERD+%2526+data+flow+%25281%2529.png%22%3B+filename%2A%3DUTF-8%27%27_Blank%2520ERD%2520%2526%2520data%2520flow%2520%25281%2529.png
+Completed 302 Found in 20ms (ActiveRecord: 2.4ms | Allocations: 11121)
+
+
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"_Blank ERD %26 data flow %281%29.png\"; filename*=UTF-8''_Blank%20ERD%20%26%20data%20flow%20%281%29.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhRzU2WW5VMmIyTnROM00zYm0xa2JXMW5aR2QzTlRWM1pUUjBhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWw5Q2JHRnVheUJGVWtRZ0pUSTJJR1JoZEdFZ1pteHZkeUFsTWpneEpUSTVMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblgwSnNZVzVySlRJd1JWSkVKVEl3SlRJMkpUSXdaR0YwWVNVeU1HWnNiM2NsTWpBbE1qZ3hKVEk1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMThUMTM6MjI6NDAuOTA5WiIsInB1ciI6ImJsb2Jfa2V5In19--7edb98fb8c80b16e791c30910db0c1893eda93c8", "filename"=>"_Blank ERD & data flow (1)"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 402)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNVGg0WVc1MGVqZGtPR0pqTVdSc01HMDFkMjR4ZEdVeVoyRjBiZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWw5Q2JHRnVheUJGVWtRZ0pUSTJJR1JoZEdFZ1pteHZkeUFsTWpneEpUSTVMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblgwSnNZVzVySlRJd1JWSkVKVEl3SlRJMkpUSXdaR0YwWVNVeU1HWnNiM2NsTWpBbE1qZ3hKVEk1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMThUMTM6MjI6NDAuOTE0WiIsInB1ciI6ImJsb2Jfa2V5In19--8a49cd6e95d8eddb4586fe05a479fc3e6ff7cf27/_Blank%20ERD%20&%20data%20flow%20(1).png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22_Blank+ERD+%2526+data+flow+%25281%2529.png%22%3B+filename%2A%3DUTF-8%27%27_Blank%2520ERD%2520%2526%2520data%2520flow%2520%25281%2529.png" for 127.0.0.1 at 2020-08-18 06:17:40 -0700
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"_Blank ERD %26 data flow %281%29.png\"; filename*=UTF-8''_Blank%20ERD%20%26%20data%20flow%20%281%29.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNVGg0WVc1MGVqZGtPR0pqTVdSc01HMDFkMjR4ZEdVeVoyRjBiZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWw5Q2JHRnVheUJGVWtRZ0pUSTJJR1JoZEdFZ1pteHZkeUFsTWpneEpUSTVMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblgwSnNZVzVySlRJd1JWSkVKVEl3SlRJMkpUSXdaR0YwWVNVeU1HWnNiM2NsTWpBbE1qZ3hKVEk1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMThUMTM6MjI6NDAuOTE0WiIsInB1ciI6ImJsb2Jfa2V5In19--8a49cd6e95d8eddb4586fe05a479fc3e6ff7cf27", "filename"=>"_Blank ERD & data flow (1)"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 373)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhSE5uYjJRM2VtOTNZV0YzWTI5NFpISmtkM1p4Y1RWck4zWmpid1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWw5Q2JHRnVheUJGVWtRZ0pUSTJJR1JoZEdFZ1pteHZkeUFsTWpneEpUSTVMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblgwSnNZVzVySlRJd1JWSkVKVEl3SlRJMkpUSXdaR0YwWVNVeU1HWnNiM2NsTWpBbE1qZ3hKVEk1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMThUMTM6MjI6NDAuOTE3WiIsInB1ciI6ImJsb2Jfa2V5In19--34502bbc98321a5dd7272cf3523888fb11e4785d/_Blank%20ERD%20&%20data%20flow%20(1).png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22_Blank+ERD+%2526+data+flow+%25281%2529.png%22%3B+filename%2A%3DUTF-8%27%27_Blank%2520ERD%2520%2526%2520data%2520flow%2520%25281%2529.png" for 127.0.0.1 at 2020-08-18 06:17:40 -0700
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"_Blank ERD %26 data flow %281%29.png\"; filename*=UTF-8''_Blank%20ERD%20%26%20data%20flow%20%281%29.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhhSE5uYjJRM2VtOTNZV0YzWTI5NFpISmtkM1p4Y1RWck4zWmpid1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpZldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWw5Q2JHRnVheUJGVWtRZ0pUSTJJR1JoZEdFZ1pteHZkeUFsTWpneEpUSTVMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblgwSnNZVzVySlRJd1JWSkVKVEl3SlRJMkpUSXdaR0YwWVNVeU1HWnNiM2NsTWpBbE1qZ3hKVEk1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMThUMTM6MjI6NDAuOTE3WiIsInB1ciI6ImJsb2Jfa2V5In19--34502bbc98321a5dd7272cf3523888fb11e4785d", "filename"=>"_Blank ERD & data flow (1)"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 370)
+
+
+Started GET "/signout" for 127.0.0.1 at 2020-08-18 06:17:42 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 331)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-18 06:17:42 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:12:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1738)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 1.3ms | Allocations: 7148)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-08-18 06:17:43 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.2ms | Allocations: 780)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 841)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 1.2ms | Allocations: 6861)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-18 06:17:51 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"PvuRjTSHz6/Bi9yDolx2rTvcFdi2EU6Bf+zir+BRP2eZ0fOe7Fiek1RTKF1M+LLNdT7k0Fku21kT+bJNeh7LuA==", "user"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007f011820e958 @tempfile=#<Tempfile:/tmp/RackMultipart20200818-30805-168bi56.png>, @original_filename="_Blank ERD & data flow (1).png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"_Blank ERD & data flow (1).png\"\r\nContent-Type: image/png\r\n">, "name"=>"pok"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:28:in `block in create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "remember_token") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "pok"], ["created_at", "2020-08-18 13:17:51.739246"], ["updated_at", "2020-08-18 13:17:51.739246"], ["remember_token", "B9qWdRgIkImAE8u5tI064A"]]
+  ↳ app/controllers/users_controller.rb:28:in `block in create'
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `block in create'
+  [1m[36mActiveStorage::Blob Create (0.7ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "4bqyaf4946cjiy5pthsrvajiwz1h"], ["filename", "_Blank ERD & data flow (1).png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 40101], ["checksum", "wfGgeyTPf/wNAcquu6+e9g=="], ["created_at", "2020-08-18 13:17:51.744178"]]
+  ↳ app/controllers/users_controller.rb:28:in `block in create'
+  [1m[36mActiveStorage::Attachment Create (0.8ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "avatar"], ["record_type", "User"], ["record_id", 3], ["blob_id", 6], ["created_at", "2020-08-18 13:17:51.746887"]]
+  ↳ app/controllers/users_controller.rb:28:in `block in create'
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2[0m  [["updated_at", "2020-08-18 13:17:51.749160"], ["id", 3]]
+  ↳ app/controllers/users_controller.rb:28:in `block in create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:28:in `block in create'
+[36m  Disk Storage (8.9ms) [0m[32mUploaded file to key: 4bqyaf4946cjiy5pthsrvajiwz1h (checksum: wfGgeyTPf/wNAcquu6+e9g==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: c6214639-c1d0-4c23-9bac-96aee4ada8b0) to Async(active_storage_analysis) with arguments: #<GlobalID:0x00007f011432b218 @uri=#<URI::GID gid://times/ActiveStorage::Blob/6>>
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 41ms (ActiveRecord: 7.4ms | Allocations: 18619)
+
+
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c6214639-c1d0-4c23-9bac-96aee4ada8b0] Performing ActiveStorage::AnalyzeJob (Job ID: c6214639-c1d0-4c23-9bac-96aee4ada8b0) from Async(active_storage_analysis) enqueued at 2020-08-18T13:17:51Z with arguments: #<GlobalID:0x00007f01143141d0 @uri=#<URI::GID gid://times/ActiveStorage::Blob/6>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c6214639-c1d0-4c23-9bac-96aee4ada8b0] [36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: 4bqyaf4946cjiy5pthsrvajiwz1h[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c6214639-c1d0-4c23-9bac-96aee4ada8b0] Skipping image analysis because the mini_magick gem isn't installed
+Started GET "/users" for 127.0.0.1 at 2020-08-18 06:17:51 -0700
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c6214639-c1d0-4c23-9bac-96aee4ada8b0]   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c6214639-c1d0-4c23-9bac-96aee4ada8b0]   [1m[36mActiveStorage::Blob Update (1.2ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 6]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c6214639-c1d0-4c23-9bac-96aee4ada8b0]   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c6214639-c1d0-4c23-9bac-96aee4ada8b0] Performed ActiveStorage::AnalyzeJob (Job ID: c6214639-c1d0-4c23-9bac-96aee4ada8b0) from Async(active_storage_analysis) in 13.07ms
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:12:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3495)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 1.4ms | Allocations: 7093)
+
+
