@@ -31,14 +31,14 @@ rescue ActiveRecord::PendingMigrationError => e
   puts e.to_s.strip
   exit 1
 end
-RSpec.configure do |confisg|
+RSpec.configure do |confipg|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
-  confisg.fixture_path = "#{::Rails.root}/spec/fixtures"
+  confipg.fixture_path = "#{::Rails.root}/spec/fixtures"
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
-  confisg.use_transactional_fixtures = true
+  confipg.use_transactional_fixtures = true
 
   # You can uncomment this line to turn off ActiveRecord support entirely.
   # config.use_active_record = false
@@ -56,10 +56,10 @@ RSpec.configure do |confisg|
   #
   # The different available types are documented in the features, such as in
   # https://relishapp.com/rspec/rspec-rails/docs
-  confisg.infer_spec_type_from_file_location!
+  confipg.infer_spec_type_from_file_location!
 
   # Filter lines from Rails gems in backtraces.
-  confisg.filter_rails_from_backtrace!
+  confipg.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
   ENV['RAILS_ENV'] ||= 'test'
@@ -74,18 +74,18 @@ RSpec.configure do |confisg|
 
   ActiveRecord::Migration.maintain_test_schema!
 
-  RSpec.configure do |confisg|
+  RSpec.configure do |confitg|
     # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
-    confisg.fixture_path = "#{::Rails.root}/spec/fixtures"
-    confisg.use_transactional_fixtures = false
-    confisg.infer_spec_type_from_file_location!
-    confisg.filter_rails_from_backtrace!
+    confitg.fixture_path = "#{::Rails.root}/spec/fixtures"
+    confitg.use_transactional_fixtures = false
+    confitg.infer_spec_type_from_file_location!
+    confitg.filter_rails_from_backtrace!
 
-    confisg.before(:suite) do
+    confitg.before(:suite) do
       DatabaseCleaner.clean_with(:truncation)
     end
 
-    confisg.before(:each) do
+    confitg.before(:each) do
       DatabaseCleaner.strategy = :transaction
     end
 
@@ -95,11 +95,11 @@ RSpec.configure do |confisg|
 
     # This block must be here, do not combine with the other `before(:each)` block.
     # This makes it so Capybara can see the database.
-    confisg.before(:each) do
+    confitg.before(:each) do
       DatabaseCleaner.start
     end
 
-    confisg.after(:each) do
+    confitg.after(:each) do
       DatabaseCleaner.clean
     end
   end
