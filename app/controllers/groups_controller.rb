@@ -5,13 +5,13 @@ class GroupsController < ApplicationController
   # GET /groups.json
   def index
     @groups = Group.all
-    @current_user ||= User.find_by_remember_token(cookies[:remember_token])
+    @index ||= User.find_by_remember_token(cookies[:remember_token])
   end
 
   # GET /groups/1
   # GET /groups/1.json
   def show
-    @hours = Hour.where(group_id: @group.id).order('created_at DESC').includes(:hour)
+    @hours = Hour.where(group_id: @group.id).order('created_at DESC').includes(:user)
     @hour = @hours.to_a.map { |x| x[:amount] }.sum
   end
 

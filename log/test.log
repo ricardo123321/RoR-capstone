@@ -3240,3 +3240,123 @@ Processing by HoursController#new as HTML
 [Webpacker] Everything's up-to-date. Nothing to do
 Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 3236)
   [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (54.8ms)[0m  [1m[31mDELETE FROM "active_storage_blobs";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'active_storage_blobs';[0m
+  [1m[35m (1.2ms)[0m  [1m[31mDELETE FROM "groups";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'groups';[0m
+  [1m[35m (1.5ms)[0m  [1m[31mDELETE FROM "hours";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'hours';[0m
+  [1m[35m (1.2ms)[0m  [1m[31mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'users';[0m
+  [1m[35m (1.6ms)[0m  [1m[31mDELETE FROM "active_storage_attachments";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'active_storage_attachments';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "remember_token") VALUES (?, ?, ?, ?)[0m  [["name", "molly"], ["created_at", "2020-08-18 11:10:29.037258"], ["updated_at", "2020-08-18 11:10:29.037258"], ["remember_token", "LH3gbOqan3OXHFIlV2SmJw"]]
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "sh4tsr3okz6dm6jm80mjy06m7cyq"], ["filename", "clock1.png"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 133637], ["checksum", "px5vKeqrfUiSUqtiAQX21g=="], ["created_at", "2020-08-18 11:10:29.039834"]]
+  [1m[36mActiveStorage::Attachment Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "avatar"], ["record_type", "User"], ["record_id", 1], ["blob_id", 1], ["created_at", "2020-08-18 11:10:29.040587"]]
+  [1m[36mUser Update (0.1ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2020-08-18 11:10:29.041106"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[36m  Disk Storage (1.9ms) [0m[32mUploaded file to key: sh4tsr3okz6dm6jm80mjy06m7cyq (checksum: px5vKeqrfUiSUqtiAQX21g==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 6b7626d1-889f-4152-a2f0-04a616116b64) to Async(active_storage_analysis) with arguments: #<GlobalID:0x000056403c3f9008 @uri=#<URI::GID gid://times/ActiveStorage::Blob/1>>
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Create (0.1ms)[0m  [1m[32mINSERT INTO "groups" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "kitchen"], ["created_at", "2020-08-18 11:10:29.054103"], ["updated_at", "2020-08-18 11:10:29.054103"]]
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Group"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "eh53hzx980p3bx3hzohariwbn0mo"], ["filename", "clock1.png"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 133637], ["checksum", "px5vKeqrfUiSUqtiAQX21g=="], ["created_at", "2020-08-18 11:10:29.055979"]]
+  [1m[36mActiveStorage::Attachment Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "icon"], ["record_type", "Group"], ["record_id", 1], ["blob_id", 2], ["created_at", "2020-08-18 11:10:29.056601"]]
+  [1m[36mGroup Update (0.1ms)[0m  [1m[33mUPDATE "groups" SET "updated_at" = ? WHERE "groups"."id" = ?[0m  [["updated_at", "2020-08-18 11:10:29.057110"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[36m  Disk Storage (1.6ms) [0m[32mUploaded file to key: eh53hzx980p3bx3hzohariwbn0mo (checksum: px5vKeqrfUiSUqtiAQX21g==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 40d9c634-3ee1-451b-b48a-95277ab3c612) to Async(active_storage_analysis) with arguments: #<GlobalID:0x000056403c47ff18 @uri=#<URI::GID gid://times/ActiveStorage::Blob/2>>
+Started GET "/signin" for 127.0.0.1 at 2020-08-18 04:10:29 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Discarded ActiveStorage::AnalyzeJob due to a ActiveRecord::RecordNotFound.
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Discarded ActiveStorage::AnalyzeJob due to a ActiveRecord::RecordNotFound.
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 635)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 91ms (Views: 87.1ms | ActiveRecord: 0.0ms | Allocations: 22496)
+Started POST "/sessions" for 127.0.0.1 at 2020-08-18 04:10:31 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"name"=>"molly"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "molly"], ["LIMIT", 1]]
+Redirected to http://www.example.com/users/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 646)
+Started GET "/users/1" for 127.0.0.1 at 2020-08-18 04:10:31 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/show
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/show (Duration: 18.2ms | Allocations: 1444)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.3ms | Allocations: 4736)
+Started GET "/hours" for 127.0.0.1 at 2020-08-18 04:10:31 -0700
+Processing by HoursController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "LH3gbOqan3OXHFIlV2SmJw"], ["LIMIT", 1]]
+  [1m[36mHour Load (0.1ms)[0m  [1m[34mSELECT "hours".* FROM "hours" WHERE "hours"."user_id" = ? AND "hours"."group_id" IS NOT NULL ORDER BY created_at DESC[0m  [["user_id", 1]]
+  Rendering hours/index.html.erb within layouts/application
+  Rendered hours/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 370)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 0.4ms | Allocations: 5264)
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-18 04:10:31 -0700
+Processing by HoursController#new as HTML
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 3.5ms | Allocations: 2475)
+  Rendered hours/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2765)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 8982)
+Started POST "/hours" for 127.0.0.1 at 2020-08-18 04:10:31 -0700
+Processing by HoursController#create as HTML
+  Parameters: {"hour"=>{"name"=>"molly", "amount"=>"6", "group_id"=>""}, "commit"=>"Create Hour"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "LH3gbOqan3OXHFIlV2SmJw"], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHour Create (0.1ms)[0m  [1m[32mINSERT INTO "hours" ("name", "user_id", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "molly"], ["user_id", 1], ["amount", 6], ["created_at", "2020-08-18 11:10:31.284425"], ["updated_at", "2020-08-18 11:10:31.284425"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/hours/1
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1598)
+Started GET "/hours/1" for 127.0.0.1 at 2020-08-18 04:10:31 -0700
+Processing by HoursController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHour Load (0.1ms)[0m  [1m[34mSELECT "hours".* FROM "hours" WHERE "hours"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hours/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered hours/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 559)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 3458)
+Started GET "/external" for 127.0.0.1 at 2020-08-18 04:10:33 -0700
+Processing by HoursController#external as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "LH3gbOqan3OXHFIlV2SmJw"], ["LIMIT", 1]]
+  [1m[36mHour Load (0.1ms)[0m  [1m[34mSELECT "hours".* FROM "hours" WHERE "hours"."user_id" = ? AND "hours"."group_id" IS NULL ORDER BY created_at DESC[0m  [["user_id", 1]]
+  Rendering hours/external.html.erb within layouts/application
+  Rendered hours/external.html.erb within layouts/application (Duration: 1.1ms | Allocations: 371)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 3614)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
