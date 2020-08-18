@@ -5,17 +5,17 @@ class HoursControllerTest < ActionDispatch::IntegrationTest
     @hour = hours(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get hours_url
     assert_response :success
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_hour_url
     assert_response :success
   end
 
-  test "should create hour" do
+  test 'should create hour' do
     assert_difference('Hour.count') do
       post hours_url, params: { hour: { amount: @hour.amount, name: @hour.name, user_id: @hour.user_id } }
     end
@@ -23,22 +23,22 @@ class HoursControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to hour_url(Hour.last)
   end
 
-  test "should show hour" do
+  test 'should show hour' do
     get hour_url(@hour)
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get edit_hour_url(@hour)
     assert_response :success
   end
 
-  test "should update hour" do
+  test 'should update hour' do
     patch hour_url(@hour), params: { hour: { amount: @hour.amount, name: @hour.name, user_id: @hour.user_id } }
     assert_redirected_to hour_url(@hour)
   end
 
-  test "should destroy hour" do
+  test 'should destroy hour' do
     assert_difference('Hour.count', -1) do
       delete hour_url(@hour)
     end

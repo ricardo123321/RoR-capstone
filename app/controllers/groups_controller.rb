@@ -1,5 +1,5 @@
 class GroupsController < ApplicationController
-  before_action :set_group, only: [:show, :edit, :update, :destroy]
+  before_action :set_group, only: %i[show edit update destroy]
 
   # GET /groups
   # GET /groups.json
@@ -11,8 +11,8 @@ class GroupsController < ApplicationController
   # GET /groups/1
   # GET /groups/1.json
   def show
-    @hours = Hour.where(:group_id => @group.id).order("created_at DESC").includes(:hour) 
-    @hour = @hours.to_a.map{|x| x[:amount]}.sum
+    @hours = Hour.where(group_id: @group.id).order('created_at DESC').includes(:hour)
+    @hour = @hours.to_a.map { |x| x[:amount] }.sum
   end
 
   # GET /groups/new
@@ -21,8 +21,7 @@ class GroupsController < ApplicationController
   end
 
   # GET /groups/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /groups
   # POST /groups.json
@@ -65,13 +64,14 @@ class GroupsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_group
-      @group = Group.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def group_params
-      params.require(:group).permit(:name, :icon)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_group
+    @group = Group.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def group_params
+    params.require(:group).permit(:name, :icon)
+  end
 end

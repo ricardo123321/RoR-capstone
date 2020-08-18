@@ -1,1 +1,1 @@
-json.partial! "hours/hour", hour: @hour
+json.partial! 'hours/hour', hour: @hour

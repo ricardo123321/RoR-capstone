@@ -1,8 +1,7 @@
 class SessionsController < ApplicationController
   include SessionsHelper
 
-  def new
-  end
+  def new; end
 
   def create
     user = User.find_by_name(params[:session][:name].downcase)
@@ -19,5 +18,4 @@ class SessionsController < ApplicationController
     sign_out
     redirect_to root_url
   end
-
 end
