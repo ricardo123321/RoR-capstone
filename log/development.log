@@ -36078,3 +36078,209 @@ Processing by ActiveStorage::DiskController#show as PNG
 Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 347)
 
 
+Started GET "/users/14" for 127.0.0.1 at 2020-08-18 02:56:01 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67:in `set_user'
+  Rendering users/show.html.erb within layouts/show
+  [1m[36mActiveStorage::Attachment Load (11.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 14], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/show (Duration: 17.0ms | Allocations: 2695)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 42.9ms | ActiveRecord: 12.4ms | Allocations: 7168)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97494856e456dc4921a2352e1da46694b7e23b8e/app-screenshot.png" for 127.0.0.1 at 2020-08-18 02:56:01 -0700
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97494856e456dc4921a2352e1da46694b7e23b8e", "filename"=>"app-screenshot"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+[36m  Disk Storage (7.1ms) [0m[34mGenerated URL for file at key: 6hgz6crqlf3wel6bwww9h9rwxjqd (http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MDE6MDEuMTk4WiIsInB1ciI6ImJsb2Jfa2V5In19--98111513f36b93e1cbc94fbd12aa666e47643583/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png)[0m
+Redirected to http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MDE6MDEuMTk4WiIsInB1ciI6ImJsb2Jfa2V5In19--98111513f36b93e1cbc94fbd12aa666e47643583/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png
+Completed 302 Found in 9ms (ActiveRecord: 0.1ms | Allocations: 1743)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MDE6MDEuMTk4WiIsInB1ciI6ImJsb2Jfa2V5In19--98111513f36b93e1cbc94fbd12aa666e47643583/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png" for 127.0.0.1 at 2020-08-18 02:56:01 -0700
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"app-screenshot.png\"; filename*=UTF-8''app-screenshot.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MDE6MDEuMTk4WiIsInB1ciI6ImJsb2Jfa2V5In19--98111513f36b93e1cbc94fbd12aa666e47643583", "filename"=>"app-screenshot"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 351)
+
+
+Started GET "/signout" for 127.0.0.1 at 2020-08-18 02:56:02 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 367)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-18 02:56:02 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (26.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:13:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 31.3ms | Allocations: 1417)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 9.8ms | ActiveRecord: 26.4ms | Allocations: 5016)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-08-18 02:56:04 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 97.9ms | Allocations: 1575)
+  Rendered users/new.html.erb within layouts/application (Duration: 234.5ms | Allocations: 1915)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 239ms (Views: 238.2ms | ActiveRecord: 0.0ms | Allocations: 5765)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-08-18 03:06:18 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:13:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1417)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.5ms | Allocations: 5022)
+
+
+Started GET "/signin" for 127.0.0.1 at 2020-08-18 03:06:19 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 432)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4667)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2020-08-18 03:31:24 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"ilNk0GDNMAvdbH/S/YGIxsVhyiNzCzSDaJ1cDXdo7ciQe4BJi8+mxLneZt85Oir1ppX2AOphp2bX7DPVIdpaUQ==", "session"=>{"name"=>"rvt"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "rvt"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://0.0.0.0:3000/users/14
+Completed 302 Found in 25ms (ActiveRecord: 0.5ms | Allocations: 1187)
+
+
+Started GET "/users/14" for 127.0.0.1 at 2020-08-18 03:31:24 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67:in `set_user'
+  Rendering users/show.html.erb within layouts/show
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 14], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/show (Duration: 4.8ms | Allocations: 2172)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 1.7ms | Allocations: 6418)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97494856e456dc4921a2352e1da46694b7e23b8e/app-screenshot.png" for 127.0.0.1 at 2020-08-18 03:31:25 -0700
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97494856e456dc4921a2352e1da46694b7e23b8e", "filename"=>"app-screenshot"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: 6hgz6crqlf3wel6bwww9h9rwxjqd (http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MzY6MjUuNDIwWiIsInB1ciI6ImJsb2Jfa2V5In19--36799808f2983361ca0d2997dd7b5a403c020a91/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png)[0m
+Redirected to http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MzY6MjUuNDIwWiIsInB1ciI6ImJsb2Jfa2V5In19--36799808f2983361ca0d2997dd7b5a403c020a91/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1749)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MzY6MjUuNDIwWiIsInB1ciI6ImJsb2Jfa2V5In19--36799808f2983361ca0d2997dd7b5a403c020a91/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png" for 127.0.0.1 at 2020-08-18 03:31:25 -0700
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"app-screenshot.png\"; filename*=UTF-8''app-screenshot.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhObWhuZWpaamNuRnNaak4zWld3MlluZDNkemxvT1hKM2VHcHhaQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MzY6MjUuNDIwWiIsInB1ciI6ImJsb2Jfa2V5In19--36799808f2983361ca0d2997dd7b5a403c020a91", "filename"=>"app-screenshot"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 351)
+
+
+Started GET "/hours" for 127.0.0.1 at 2020-08-18 03:31:31 -0700
+Processing by HoursController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "Y62ZTLCvz6IbD13E4nFZHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:7:in `index'
+  [1m[36mHour Load (16.4ms)[0m  [1m[34mSELECT "hours".* FROM "hours" WHERE "hours"."user_id" = ? AND "hours"."group_id" IS NOT NULL ORDER BY created_at DESC[0m  [["user_id", 14]]
+  ↳ app/controllers/hours_controller.rb:9:in `index'
+  [1m[36mGroup Load (22.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" IN (?, ?)[0m  [["id", 16], ["id", 15]]
+  ↳ app/controllers/hours_controller.rb:9:in `index'
+  Rendering hours/index.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 16], ["record_type", "Group"], ["name", "icon"], ["LIMIT", 1]]
+  ↳ app/views/hours/index.html.erb:18
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/hours/index.html.erb:18
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 15], ["record_type", "Group"], ["name", "icon"], ["LIMIT", 1]]
+  ↳ app/views/hours/index.html.erb:18
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/hours/index.html.erb:18
+  Rendered hours/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 4768)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 117ms (Views: 20.1ms | ActiveRecord: 40.9ms | Allocations: 15891)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--72b58855e68c07bbc90190862977c3c044679213/app-screenshot.png" for 127.0.0.1 at 2020-08-18 03:31:32 -0700
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0441f55da748a09b08a5207472748c58249420f1/app-screenshot.png" for 127.0.0.1 at 2020-08-18 03:31:32 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0441f55da748a09b08a5207472748c58249420f1", "filename"=>"app-screenshot"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--72b58855e68c07bbc90190862977c3c044679213", "filename"=>"app-screenshot"}
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: gwupp3ueq46x99u6va6jve7x7svk (http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaM2QxY0hBemRXVnhORFo0T1RsMU5uWmhObXAyWlRkNE4zTjJhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MzY6MzIuMDM5WiIsInB1ciI6ImJsb2Jfa2V5In19--b5578ae63c3aaf11392b9180981089d76756c6c5/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png)[0m
+Redirected to http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaM2QxY0hBemRXVnhORFo0T1RsMU5uWmhObXAyWlRkNE4zTjJhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MzY6MzIuMDM5WiIsInB1ciI6ImJsb2Jfa2V5In19--b5578ae63c3aaf11392b9180981089d76756c6c5/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms | Allocations: 2467)
+
+
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: ggkc4db9j0e9yrt4t6zubolgcr51 (http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaMmRyWXpSa1lqbHFNR1U1ZVhKME5IUTJlblZpYjJ4blkzSTFNUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MzY6MzIuMDQyWiIsInB1ciI6ImJsb2Jfa2V5In19--13816f943c4d0f6a735b1cd13e6d74ed66742299/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png)[0m
+Redirected to http://0.0.0.0:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaMmRyWXpSa1lqbHFNR1U1ZVhKME5IUTJlblZpYjJ4blkzSTFNUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MzY6MzIuMDQyWiIsInB1ciI6ImJsb2Jfa2V5In19--13816f943c4d0f6a735b1cd13e6d74ed66742299/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 2209)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaM2QxY0hBemRXVnhORFo0T1RsMU5uWmhObXAyWlRkNE4zTjJhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MzY6MzIuMDM5WiIsInB1ciI6ImJsb2Jfa2V5In19--b5578ae63c3aaf11392b9180981089d76756c6c5/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png" for 127.0.0.1 at 2020-08-18 03:31:32 -0700
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaMmRyWXpSa1lqbHFNR1U1ZVhKME5IUTJlblZpYjJ4blkzSTFNUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MzY6MzIuMDQyWiIsInB1ciI6ImJsb2Jfa2V5In19--13816f943c4d0f6a735b1cd13e6d74ed66742299/app-screenshot.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22app-screenshot.png%22%3B+filename%2A%3DUTF-8%27%27app-screenshot.png" for 127.0.0.1 at 2020-08-18 03:31:32 -0700
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"app-screenshot.png\"; filename*=UTF-8''app-screenshot.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaM2QxY0hBemRXVnhORFo0T1RsMU5uWmhObXAyWlRkNE4zTjJhd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MzY6MzIuMDM5WiIsInB1ciI6ImJsb2Jfa2V5In19--b5578ae63c3aaf11392b9180981089d76756c6c5", "filename"=>"app-screenshot"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 682)
+
+
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"app-screenshot.png\"; filename*=UTF-8''app-screenshot.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaMmRyWXpSa1lqbHFNR1U1ZVhKME5IUTJlblZpYjJ4blkzSTFNUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd2NDMXpZM0psWlc1emFHOTBMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbllYQndMWE5qY21WbGJuTm9iM1F1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDgtMThUMTA6MzY6MzIuMDQyWiIsInB1ciI6ImJsb2Jfa2V5In19--13816f943c4d0f6a735b1cd13e6d74ed66742299", "filename"=>"app-screenshot"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/hours/new" for 127.0.0.1 at 2020-08-18 03:31:42 -0700
+Processing by HoursController#new as HTML
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/controllers/hours_controller.rb:25:in `map'
+  Rendering hours/new.html.erb within layouts/application
+  Rendered hours/_form.html.erb (Duration: 41.4ms | Allocations: 1308)
+  Rendered hours/new.html.erb within layouts/application (Duration: 152.9ms | Allocations: 1603)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 159ms (Views: 157.0ms | ActiveRecord: 0.1ms | Allocations: 6056)
+
+
+Started GET "/users/14" for 127.0.0.1 at 2020-08-18 03:34:19 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67:in `set_user'
+  Rendering users/show.html.erb within layouts/show
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 14], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/show (Duration: 4.9ms | Allocations: 2150)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 155ms (Views: 151.7ms | ActiveRecord: 0.7ms | Allocations: 6365)
+
+
+Started GET "/external" for 127.0.0.1 at 2020-08-18 03:34:20 -0700
+Processing by HoursController#external as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = ? LIMIT ?[0m  [["remember_token", "Y62ZTLCvz6IbD13E4nFZHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/hours_controller.rb:18:in `external'
+  [1m[36mHour Load (0.2ms)[0m  [1m[34mSELECT "hours".* FROM "hours" WHERE "hours"."user_id" = ? AND "hours"."group_id" IS NULL ORDER BY created_at DESC[0m  [["user_id", 14]]
+  ↳ app/controllers/hours_controller.rb:20:in `external'
+  Rendering hours/external.html.erb within layouts/application
+  Rendered hours/external.html.erb within layouts/application (Duration: 13.5ms | Allocations: 311)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 94ms (Views: 41.7ms | ActiveRecord: 0.4ms | Allocations: 5428)
+
+
