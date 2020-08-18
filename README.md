@@ -20,8 +20,6 @@
   </p>
 </p>
 
-![screenshot](./app-screenshot.gif)
-
 ## Built With
 
 - Ruby On Rails
@@ -33,7 +31,7 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://ror-caps.herokuapp.com/)
 
 
 <!-- INSTALLATION -->
