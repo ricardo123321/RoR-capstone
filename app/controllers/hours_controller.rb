@@ -16,7 +16,7 @@ class HoursController < ApplicationController
 
   def external
     @current_user ||= User.find_by_remember_token(cookies[:remember_token])
-    @hours = Hour.where(:user_id => @current_user.id, :group_id => nil).order("created_at DESC")
+    @hours = Hour.where(:user_id => @current_user.id, :group_id => nil).order("created_at DESC").includes(:group) 
     @time = @hours.to_a.map{|x| x[:amount]}.sum
   end
 

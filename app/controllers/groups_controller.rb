@@ -11,7 +11,7 @@ class GroupsController < ApplicationController
   # GET /groups/1
   # GET /groups/1.json
   def show
-    @hours = Hour.where(:group_id => @group.id).order("created_at DESC")
+    @hours = Hour.where(:group_id => @group.id).order("created_at DESC").includes(:hour) 
     @hour = @hours.to_a.map{|x| x[:amount]}.sum
   end
 
