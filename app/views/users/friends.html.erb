@@ -1,0 +1,28 @@
+<body class="bg-light">
+<header class="blog-header py-3 bg-nblg">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+            <%= link_to 'My Profile', '/profile', class:"text-white ml-2"%>
+        </div>
+        <div class="col-4 text-center">
+            <h1 class="blog-header-logo text-white" href="#">Friends</h1>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+            <%= link_to "Sign out", signout_path, class: "btn btn-sm btn-outline-secondary text-white mr-2"%><br>
+        </div>
+    </div>
+</header>
+<br>
+
+<% @user.friendships.each do |friendship| %>
+  <%= link_to friendship.friend do %>
+  <div class="media pt-2 pb-2 text-muted bg-white">
+    <img src="<%=(url_for(friendship.friend.avatar))%>" alt="" class="ml-2 mr-2 rounded" width="50" height="50"/>
+    <p class="lh-125 mb-0 media-body small ml-3 mt-1"> <strong class="d-block text-gray-dark h3 "><%= friendship.friend.name %></strong></p>   
+  </div>
+  <% end %>
+<% end %>
+
+
+
+

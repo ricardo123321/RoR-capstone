@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   has_one_attached :avatar
   has_many :hours
+  has_many :friendships
+  has_many :friends, :through => :friendships
   before_save :create_remember_token
   validates :name, presence: true
   validates :avatar, presence: true, blob: { content_type: ['image/jpg', 'image/jpeg', 'image/png'], size_range: 1..3.megabytes }

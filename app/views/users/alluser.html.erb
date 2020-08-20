@@ -1,0 +1,31 @@
+<body class="bg-light">
+<header class="blog-header py-3 bg-nblg">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+            <%= link_to 'My Profile', '/profile', class:"text-white ml-2"%>
+        </div>
+        <div class="col-4 text-center">
+            <h1 class="blog-header-logo text-white" href="#">All Users</h1>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+            <%= link_to "Sign out", signout_path, class: "btn btn-sm btn-outline-secondary text-white mr-2"%><br>
+        </div>
+    </div>
+</header>
+<br>
+
+<% @users.each do |user| %>
+  <% if user.name != current_user.name %>
+  <div class="media pt-2 pb-2 text-muted bg-white">
+    <p class="lh-125 mb-0 media-body small ml-2"> <strong class="d-block text-gray-dark"><%= user.name %>
+    <% if Friendship.where(:user_id => current_user.id, :friend_id => user.id).exists?%>
+      <%= link_to "Unfollow", friendship_path(current_user.friendships.find_by_friend_id(user)), :method => :delete, class: "float-right mr-2" %>
+    <% else %>
+      <%= link_to "Follow", friendships_path(:friend_id => user), :method => :post, class: "float-right mr-2"%>
+    </p>
+    <% end %>
+</div>
+ <br>
+  <% end %> 
+<% end %>
+</body>

@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     user = User.find_by_name(params[:session][:name].downcase)
     if user
       sign_in user
-      redirect_to user
+      redirect_to '/profile'
     else
       flash[:error] = 'Invalid name combination' # Not quite right!
       render 'new'

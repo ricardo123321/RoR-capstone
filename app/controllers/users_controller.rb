@@ -7,13 +7,25 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def alluser
+    @users = User.all
+  end
+
+  def friends
+    @users = User.all
+    @user ||= User.find_by_remember_token(cookies[:remember_token])
+  end
+
   def profile
     @user ||= User.find_by_remember_token(cookies[:remember_token])
   end
 
   # GET /users/1
   # GET /users/1.json
-  def show; end
+  def show
+    @hours = Hour.where(user_id: @user.id).order('created_at DESC').includes(:group)
+    @time = @hours.to_a.map { |x| x[:amount] }.sum
+  end
 
   # GET /users/new
   def new
