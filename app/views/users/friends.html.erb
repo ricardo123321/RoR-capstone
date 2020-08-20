@@ -14,7 +14,7 @@
 </header>
 <br>
 
-<% @user.friendships.each do |friendship| %>
+<% @friends.friendships.each do |friendship| %>
   <%= link_to friendship.friend do %>
   <div class="media pt-2 pb-2 text-muted bg-white">
     <img src="<%=(url_for(friendship.friend.avatar))%>" alt="" class="ml-2 mr-2 rounded" width="50" height="50"/>

@@ -1,8 +1,8 @@
 <div class="text-center">
-<img src="<%=(url_for(@user.avatar))%>" class="ml-2 mr-2 mb-3 rounded-circle" width="80" height="80"/>
+<img src="<%=(url_for(@profile.avatar))%>" class="ml-2 mr-2 mb-3 rounded-circle" width="80" height="80"/>
 <br>
 <h4 class="mb-3 text-white">
-  <%= @user.name %>
+  <%= @profile.name %>
 </h4>
 
 <%= link_to 'All my hours', hours_path, class: "d-block pt-3 pb-3 text-white" %>

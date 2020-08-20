@@ -13,11 +13,11 @@ class UsersController < ApplicationController
 
   def friends
     @users = User.all
-    @user ||= User.find_by_remember_token(cookies[:remember_token])
+    @friends ||= User.find_by_remember_token(cookies[:remember_token])
   end
 
   def profile
-    @user ||= User.find_by_remember_token(cookies[:remember_token])
+    @profile ||= User.find_by_remember_token(cookies[:remember_token])
   end
 
   # GET /users/1
