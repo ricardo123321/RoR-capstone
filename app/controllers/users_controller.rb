@@ -1,10 +1,14 @@
 class UsersController < ApplicationController
   before_action :set_user, only: %i[show edit update destroy]
-  layout 'show', only: [:show]
+  layout 'profile', only: [:profile]
   # GET /users
   # GET /users.json
   def index
     @users = User.all
+  end
+
+  def profile
+    @user ||= User.find_by_remember_token(cookies[:remember_token])
   end
 
   # GET /users/1

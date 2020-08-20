@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/signin',  to: 'sessions#new'
   get '/signout', to: 'sessions#destroy'
   get '/external', to: 'hours#external'
+  get '/profile', to: 'users#profile'
   root to: 'users#index'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
