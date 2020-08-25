@@ -10,14 +10,15 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+  <div class="text-center">
+  <div class="field text-center d-inline-block">
     <%= form.text_field :name, placeholder:"name", class: "border-top-0 border-left-0 border-right-0 pt-2 pb-2"%><br>
     <%= form.number_field :amount, placeholder:"amount", class: "border-0 pt-2 pb-2" %>
     <%= form.label :group %>
     <%= form.select(:group_id, @group_options, { include_blank: true }) %>
   </div>
-  
+  </div>
+  <br>
 
   <div class="actions text-center">
     <%= form.submit%><br><br>
