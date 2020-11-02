@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hour.name %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @hour.user.name %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @hour.amount %>
+</p>
+
+<p>
+  <strong>group:</strong>
+  <% if @hour.group.nil? %>
+   none
+  <% else %>
+  <%= @hour.group.name %>
+  <% end %>
+</p>
+
+<%= link_to 'Back', hours_path %>

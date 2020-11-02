@@ -1,0 +1,5 @@
+*/node_modules/*
+log/development.log
+log/development.log
+*.log
+/tmp/*
